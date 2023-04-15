@@ -124,18 +124,18 @@ html, body {
 }
 
 
-#card1 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/greenplains.jpg);
+#green-plains {
+    background-image: url(/parts/image/green-plains.jpg);
     background-size: 180%;
 }
 
-#card2 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/sessionzero.jpg);
+#session-zero {
+    background-image: url(/parts/image/session-zero.jpg);
     background-size: 180%;
 }
 
 #card3 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/shadowalley.jpg);
+    background-image: url(/parts/image/shadow-alley.jpg);
     background-size: 180%;
 }
 
@@ -145,22 +145,22 @@ html, body {
 }
 
 #sea-adventure {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/seaadventure.jpg);
+    background-image: url(/parts/image/seaadventure.jpg);
     background-size: 180%;
 }
 
 #card6 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/sewers.jpg);
+    background-image: url(/parts/image/sewers.jpg);
     background-size: 180%;
 }
 
 #card7 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/tavern.jpg);
+    background-image: url(/parts/image/tavern.jpg);
     background-size: 180%;
 }
 
-#card8 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/rain.jpg);
+#rain {
+    background-image: url(/parts/image/rain.jpg);
     background-size: 180%;
 }
 
@@ -205,7 +205,7 @@ html, body {
 }
 
 #card17 {
-    background-image: url(/ALL/Projects/dungeonRadio/_files/images/magicitemshop.jpg);
+    background-image: url(/parts/image/magic-item-shop.jpg);
     background-size: 180%;
 }
 
