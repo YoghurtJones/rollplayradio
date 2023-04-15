@@ -234,6 +234,11 @@ html, body {
     background-size: 180%;
 }
 
+#swamp {
+    background-image: url(/parts/image/swamp.jpg);
+    background-size: 180%;
+}
+
 @media screen and (max-width: 600px){
     
     body {
