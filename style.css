@@ -1,3 +1,235 @@
-body {
-    font-family: 'Lato', sans-serif;
+html, body {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #0f0f0f;
+}
+
+@font-face {
+    font-family: "DungeonRadio";
+    src: url("/parts/font/DragonHunter.otf") format("opentype");
+  }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    user-select: none;
+}
+
+.title img {
+    margin: 10px;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+
+.title img:active {
+    opacity: .5;
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection h1 {
+    color: red;
+    text-align: center;
+    font-family: "DungeonRadio", sans-serif;
+    font-size: 50px;
+}
+ 
+
+.cards {
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color:red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: box-shadow 1s ease-in-out;
+}
+
+.card p {
+    padding: 10px;
+    width: 150px;
+    font-size: 18px;
+    font-weight:100;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: red;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    margin-top: auto;
+    margin-left: auto;
+
+    box-shadow: 5px 5px 10px black;
+}
+
+.ambience p {
+    color: black;
+    background-color: greenyellow;
+}
+
+.card:hover {
+    animation: inspect ease-in .1s forwards;
+}
+
+@keyframes inspect {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateY(-2%);
+    }
+}
+
+.card:active {
+    animation: click ease-in-out .1s forwards;
+}
+
+@keyframes click {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        opacity: .8;
+        border-radius: 20px;
+    }
+}
+
+
+#card1 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/greenplains.jpg);
+    background-size: 180%;
+}
+
+#card2 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/sessionzero.jpg);
+    background-size: 180%;
+}
+
+#card3 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/shadowalley.jpg);
+    background-size: 180%;
+}
+
+#beach {
+    background-image: url(/parts/image/beach.jpg);
+    background-size: 180%;
+}
+
+#sea-adventure {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/seaadventure.jpg);
+    background-size: 180%;
+}
+
+#card6 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/sewers.jpg);
+    background-size: 180%;
+}
+
+#card7 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/tavern.jpg);
+    background-size: 180%;
+}
+
+#card8 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/rain.jpg);
+    background-size: 180%;
+}
+
+#card9 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/peacefultravel.jpg);
+    background-size: 180%;
+}
+
+#card10 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/etherealplane.jpg);
+    background-size: 180%;
+}
+
+#card11 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/etherealplane.jpg);
+    background-size: 180%;
+}
+
+#card12 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/monsterlair.jpg);
+    background-size: 180%;
+}
+
+#card13 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/ship.jpg);
+    background-size: 180%;
+}
+
+#card14 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/blizzard.jpg);
+    background-size: 180%;
+}
+
+#card15 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/forest.jpg);
+    background-size: 180%;
+}
+
+#card16 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/dwarvencity.jpg);
+    background-size: 180%;
+}
+
+#card17 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/magicitemshop.jpg);
+    background-size: 180%;
+}
+
+#card18 {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/volcano.jpg);
+    background-size: 180%;
+}
+
+#epic-fight {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/epicfight.jpg);
+    background-size: 180%;
+}
+
+#mt-celestia {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/music-mountcelestia.jpg);
+    background-size: 180%;
+}
+
+#long-rest {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/music-longrest.jpg);
+    background-size: 180%;
+}
+
+#wizard-tower {
+    background-image: url(/ALL/Projects/dungeonRadio/_files/images/music-wizardtower.png);
+    background-size: 180%;
 }
