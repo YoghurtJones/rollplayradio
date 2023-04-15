@@ -206,6 +206,16 @@ html, body {
         box-shadow: 5px 5px 10px black;
     }
 
+    .ambience p {
+        color: black;
+        background-color: greenyellow;
+    }
+    
+    .card:hover {
+        animation: inspect ease-in .1s forwards;
+    }
+    
+
 }
 
 
