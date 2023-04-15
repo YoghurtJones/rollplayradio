@@ -221,6 +221,11 @@ html, body {
     background-size: 180%;
 }
 
+#large-city {
+    background-image: url(/parts/image/large-city.jpg);
+    background-size: 180%;
+}
+
 #long-rest {
     background-image: url(/parts/image/long-rest.jpg);
     background-size: 180%;
@@ -261,7 +266,7 @@ html, body {
     background-size: 180%;
 }
 
-#shadow-valley {
+#shadow-alley {
     background-image: url(/parts/image/shadow-alley.jpg);
     background-size: 180%;
 }
