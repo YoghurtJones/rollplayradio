@@ -1,334 +1,480 @@
-html, body {
-    margin-left: 10px;
-    margin-right: 10px;
+* {
+    margin: 0;
     padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: #0f0f0f;
-}
-
-@font-face {
-    font-family: "DungeonRadio";
-    src: url("/parts/font/DragonHunter.otf") format("opentype");
+    font-family: "Lato", sans-serif;
   }
 
-.title {
+body {
+    /* Apply a background color to this element. */
+    background-color: dodgerblue;
+  }
+  
+header {
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+  }
+  
+.primary-nav {
+    /* Apply a background color to the element. */
+    background-color: #333138;
+    /* Apply minimum height of the element. */
+    min-height: 50px;
+    /* Control the layout of child elements. */
     display: flex;
+    /* Position items vertically center of the parent element. */
+    flex-direction: row;
+    /* Position the child elements to the end (right) of the element. */
     justify-content: center;
     align-items: center;
-}
-
-.title h1 {
-    user-select: none;
-}
-
-.title img {
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-}
-
-.title img:active {
-    opacity: .5;
-}
-
-.collection {
+  }
+  
+.primary-nav ul {
+    margin: 5px;
+    /* Control the layout of contained elements */
     display: flex;
-    flex-direction: column;
-}
-
-.collection h1 {
-    color: red;
-    text-align: center;
-    font-family: "DungeonRadio", sans-serif;
-    font-size: 50px;
-}
- 
-
-.cards {
-    margin: 0;
-    gap: 10px;
-
+    /* Force flex to row instead of column. */
+    flex-direction: row;
+  }
+  
+.primary-nav li {
+    /* Add margin to the list items contained within the parent element. */
+    margin: 5px 5px;
+    /* Remove bullet points on list. */
+    list-style: none;
+  }
+  
+.primary-nav a {
+    /* Apply a padding to the text. */
+    padding: 5px 10px;
+    /* Remove underline on text. */
+    text-decoration: none;
+    /* Assign color of text. */
+    color: #009E60;
+    /* Apply a background color. */
+    background-color: #333138;
+    /* Apply a border radius to the text. */
+    border-radius: 5px;
+  
+    font-weight: 700;
+  }
+  
+.primary-nav a:hover {
+    color: #87ffcb;
+  
+    background-color: #262525;
+  }
+  
+  .pri-nav-left {
+    /* Control the layout of child elements. */
+    flex: 1;
+    display: flex;
+    /* Position items vertically center of the parent element. */
+    align-items: center;
+    justify-content: left;
+    font-size: 16px;
+  }
+  
+  .pri-nav-middle {
+    /* Control the layout of child elements. */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* Position items vertically center of the parent element. */
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .pri-nav-middle input {
+    padding: 5px;
+    border-style: solid;
+    background-color: #efeff1;
+    border-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  
+  .pri-nav-middle input::placeholder {
+    color: #9a9a9a;
+  }
+  
+  .pri-nav-middle input:focus {
+    background-color: white;
+    outline: none;
+  }
+  
+  .pri-nav-middle button {
+    padding: 5px;
+    border-style: solid;
+    background-color: #efeff1;
+    border-color: white;
+    border-radius: 5px;
+    height: 33px; /* set a fixed height */
+    width: 33px;
+  }
+  
+  .pri-nav-right {
+    margin-right: 10px;
+    /* Control the layout of child elements. */
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    /* Position items vertically center of the parent element. */
+    align-items: center;
+  }
+  
+  .card-new {
+    /* Control the layout of child elements. */
+    display: flex;
+    /* Position content each element to the horizontal center of parent element.*/
+    justify-content: center;
+    /* Position items vertically center of the parent element. */
+    align-items: center;
+    /* Apply a background color to this element. */
+    background-color: #7cf0bd;
+  
+    box-shadow: 1px 1px 10px #43454379;
+  }
+  
+  .card-new i {
+    margin: 0 10px;
+    padding: 0;
+    font-weight: 700;
+  }
+  
+  .card-new a {
+    /* Apply a padding to the text. */
+    padding: 5px 5px;
+    /* Remove underline on text. */
+    text-decoration: none;
+    /* Apply a border radius to the text. */
+    border-radius: 5px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .card-new:hover {
+    background-color: #7cf0bd;
+  }
+  
+  .hero {
+    height: 750px;
+    background: linear-gradient(to bottom, rgb(228, 8, 0), rgba(74, 0, 0, 0.9));
+    box-shadow: 1px 1px 10px #43454379;
+  }
+  
+  .sidekick {
+    height: 750px;
+    background-color: #7cf0bd;
+  
+    box-shadow: 1px 1px 10px #43454379;
+  }
+  
+  .damsel {
+    height: 750px;
+    background-color: #eb5e28;
+  
+    box-shadow: 1px 1px 10px #43454379;
+  }
+  
+  .crowd {
+    height: 150px;
+    background-color: #333138;
+    box-shadow: 1px 1px 10px #43454379;
+  }
+  
+  .album {
+    padding: 20px;
+    /* background-color: silver; */
+  }
+  
+  .page {
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
-}
-
-.card {
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
     width: 250px;
-    height: 250px;
-    background-color:red;
-    border-radius: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translatey(-4px);
+  }
+  
+  .contents {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    transition: box-shadow 1s ease-in-out;
-}
-
-.card p {
-    padding: 10px;
-    width: 180px;
-    font-size: 18px;
-    font-weight:100;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    color: white;
-    background-color: red;
-    border-radius: 5px 0 0 5px;
     text-align: center;
-    margin-top: auto;
-    margin-left: auto;
-
-    box-shadow: 5px 5px 10px black;
-}
-
-.ambience p {
-    color: black;
-    background-color: greenyellow;
-}
-
-.card:hover {
-    animation: inspect ease-in .1s forwards;
-}
-
-@keyframes inspect {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateY(-2%);
-    }
-}
-
-.card:active {
-    animation: click ease-in-out .1s forwards;
-}
-
-@keyframes click {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        opacity: .8;
-        border-radius: 20px;
-    }
-}
-
-/* Working on mobile layout */
-
-@media screen and (max-width: 600px){
-    
-    html, body {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 0;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        background-color: #0f0f0f;
-    }
-
-    .title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .title h1 {
-        user-select: none;
-    }
-    
-    .title img {
-        margin: 10px;
-        width: 50px;
-        height: 50px;
-        opacity: 1;
-    }
-    
-    .title img:active {
-        opacity: .5;
-    }
-    
-    .collection {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .collection h1 {
-        color: red;
-        text-align: center;
-        font-family: "DungeonRadio", sans-serif;
-        font-size: 35px;
-    }
-
-    .cards {
-        margin: 0;
-        padding: 10px;
-        gap: 10px;
-    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    .card {
-        max-width: 160px;
-        max-height: 160px;
-    }
-
-    .card p {
-        padding: 10px;
-        width: 110px;
-        font-size: 14px;
-        font-weight:100;
-        font-family: "Lato", sans-serif;
-        font-weight: 700;
-        color: white;
-        background-color: red;
-        border-radius: 5px 0 0 5px;
-        text-align: right;
-        margin-top: auto;
-        margin-left: auto;
-    
-        box-shadow: 5px 5px 10px black;
-    }
-
-    .ambience p {
-        color: black;
-        background-color: greenyellow;
-    }
-    
-    .card:hover {
-        animation: inspect ease-in .1s forwards;
-    }
-    
-
-}
-
-
-/* The background of each cards */
-
-#beach {
-    background-image: url(/parts/image/beach.jpg);
-    background-size: 180%;
-}
-
-#blizzard {
-    background-image: url(/parts/image/blizzard.jpg);
-    background-size: 180%;
-}
-
-#dwarven-city {
-    background-image: url(/parts/image/dwarven-city.jpg);
-    background-size: 180%;
-}
-
-#epic-fight {
-    background-image: url(/parts/image/epic-fight.jpg);
-    background-size: 180%;
-}
-
-#ethereal-plane {
-    background-image: url(/parts/image/ethereal-plane.jpg);
-    background-size: 180%;
-}
-
-#forest {
-    background-image: url(/parts/image/forest.jpg);
-    background-size: 180%;
-}
-
-#green-plains {
+  }
+  
+  .card-name {
+    user-select: none;
+    width: 250px;
+    padding: 10px 0;
+    border-radius: 10 10px 0 0 ;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  
+  .card-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-desc {
+    user-select: none;
+    padding: 5px 10px;
+    height: 60px;
+    color: whitesmoke;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .card-desc p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .bg-music-name {
+    background: linear-gradient(to right, rgba(255, 8, 0, 0.8), rgba(199, 0, 0, 0.5));
+  }
+  
+  .bg-music-desc {
+    background: linear-gradient(to right, rgba(255, 8, 0), rgba(199, 0, 0));
+  }
+  
+  .bg-ambience-name {
+    background: linear-gradient(to right, rgba(0,158,96,0.8), rgba(16,93,16,0.8));
+  
+  }
+  
+  .bg-ambience-desc {
+    background: linear-gradient(to right, #009E60, #105d10);
+  }
+  
+  #img-green-plains {
     background-image: url(/parts/image/green-plains.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 180%;
-}
-
-#large-city {
-    background-image: url(/parts/image/large-city.jpg);
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-green-plains p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-green-plains:hover {
+    background-size: 210%;
+  }
+  
+  #img-sandy-beach {
+    background-image: url(/parts/image/beach.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 180%;
-}
-
-#long-rest {
-    background-image: url(/parts/image/long-rest.jpg);
-    background-size: 180%;
-}
-
-#magic-item-shop {
-    background-image: url(/parts/image/magic-item-shop.jpg);
-    background-size: 180%;
-}
-
-#monster-lair {
-    background-image: url(/parts/image/monster-lair.jpg);
-    background-size: 180%;
-}
-
-#mt-celestia {
-    background-image: url(/parts/image/mt-celestia.jpg);
-    background-size: 180%;
-}
-
-#peaceful-travel {
-    background-image: url(/parts/image/peaceful-travel.jpg);
-    background-size: 180%;
-}
-
-#rain {
-    background-image: url(/parts/image/rain.jpg);
-    background-size: 180%;
-}
-
-#sea-adventure {
-    background-image: url(/parts/image/sea-adventure.jpg);
-    background-size: 180%;
-}
-
-#sewer {
-    background-image: url(/parts/image/sewer.jpg);
-    background-size: 180%;
-}
-
-#shadow-alley {
-    background-image: url(/parts/image/shadow-alley.jpg);
-    background-size: 180%;
-}
-
-#ship {
-    background-image: url(/parts/image/ship.jpg);
-    background-size: 180%;
-}
-
-#swamp {
-    background-image: url(/parts/image/swamp.jpg);
-    background-size: 180%;
-}
-
-#session-zero {
-    background-image: url(/parts/image/session-zero.jpg);
-    background-size: 180%;
-}
-
-#tavern {
-    background-image: url(/parts/image/tavern.jpg);
-    background-size: 180%;
-}
-
-#volcano {
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-sandy-beach p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-sandy-beach:hover {
+    background-size: 210%;
+  }
+  
+  #img-volcano {
     background-image: url(/parts/image/volcano.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 180%;
-}
-
-#wizard-tower {
-    background-image: url(/parts/image/wizard-tower.png);
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-volcano p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-volcano:hover {
+    background-size: 210%;
+  }
+  
+  #img-large-city {
+    background-image: url(/parts/image/large-city.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 180%;
-}
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-large-city p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-large-city:hover {
+    background-size: 210%;
+  }
+  
+  #img-sea-adventure {
+    background-image: url(/parts/image/sea-adventure.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-sea-adventure p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-sea-adventure:hover {
+    background-size: 210%;
+  }
+  
+  #img-magic-item-shop {
+    background-image: url(/parts/image/magic-item-shop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-magic-item-shop p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-magic-item-shop:hover {
+    background-size: 210%;
+  }
+  
+  #img-blizzard {
+    background-image: url(/parts/image/blizzard.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-blizzard p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-blizzard:hover {
+    background-size: 210%;
+  }
+  
+  #img-dwarven-city {
+    background-image: url(/parts/image/dwarven-city.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-dwarven-city p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-dwarven-city:hover {
+    background-size: 210%;
+  }
+  
+  #img-epic-fight {
+    background-image: url(/parts/image/epic-fight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-epic-fight p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-epic-fight:hover {
+    background-size: 210%;
+  }
+  
+  #img-ethereal-plane {
+    background-image: url(/parts/image/ethereal-plane.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-ethereal-plane p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-ethereal-plane:hover {
+    background-size: 210%;
+  }
+  
+  #img-forest {
+    background-image: url(/parts/image/forest.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-forest p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-forest:hover {
+    background-size: 210%;
+  }
+  
+  #img-long-rest {
+    background-image: url(/parts/image/long-rest.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+  #img-long-rest p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #img-long-rest:hover {
+    background-size: 210%;
+  }

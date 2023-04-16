@@ -4,157 +4,199 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-    <title>Dungeon Radio</title>
+    <title>Font Awesome</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c430204919.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="collection">
-      <div class="title">
-        <h1 class="logo">Dungeon Radio</h1>
-        <img id="globalmute" src="/parts/image/sound.png" alt="sound" />
+    <header>
+      <nav class="primary-nav">
+        <div class="pri-nav-left">
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-fire fa-xl" style="color: #ff0800"></i></a>
+            </li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Browse</a></li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="pri-nav-middle">
+          <input class="nav-search" type="text" placeholder="Search" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <a href=""><i class="fa-solid fa-volume-xmark"></i></a>
+          <a href=""><i class="fa-solid fa-circle-half-stroke"></i></a>
+        </div>
+        <div class="pri-nav-right">
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-crown fa-bounce" style="color: #ffbf00"></i></a>
+            </li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Login</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="card-new">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-solid fa-music fa-beat" style="color: #333138"></i>Ethereal Plains is available now!<i
+            class="fa-solid fa-music fa-beat"
+            style="color: #333138"
+          ></i
+        ></a>
       </div>
-      <div class="cards">
-        <div id="beach" class="card ambience">
-          <p>Beach</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/beach.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="blizzard" class="card ambience">
-          <p>Blizzard</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/blizzard.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="dwarven-city" class="card music">
-          <p>Dwarven City</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/dwarven-city.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="epic-fight" class="card music">
-          <p>Epic Fight</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/epic-fight.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="ethereal-plane" class="card music">
-          <p>Ethereal Plane</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/ethereal-plane.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="forest" class="card ambience">
-          <p>Forest</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/forest.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="green-plains" class="card music">
-          <p>Greenplains</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/green-plains.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="large-city" class="card music">
-          <p>Large City</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/large-city.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="long-rest" class="card music">
-          <p>Long Rest</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/long-rest.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="mt-celestia" class="card music">
-          <p>Mt Celestia</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/mt-celestia.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="magic-item-shop" class="card music">
-          <p>Magic Item Shop</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/magic-item-shop.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="monster-lair" class="card ambience">
-          <p>Monster Lair</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/monster-lair.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="peaceful-travel" class="card music">
-          <p>Peaceful Travel</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/peaceful-travel.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="rain" class="card ambience">
-          <p>Rain</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/rain.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="sea-adventure" class="card music">
-          <p>Sea Adventure</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/sea-adventure.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="session-zero" class="card music">
-          <p>Session Zero</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/session-zero.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="sewer" class="card ambience">
-          <p>Sewer</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/sewer.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="shadow-alley" class="card music">
-          <p>Shadow Alley</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/music/shadow-alley.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="ship" class="card ambience">
-          <p>Ship</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/ship.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="swamp" class="card music">
-          <p>Swamp</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/Swamp.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="tavern" class="card ambience">
-          <p>Tavern</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/tavern.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="volcano" class="card ambience">
-          <p>Volcano</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/volcano.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
-        <div id="wizard-tower" class="card music">
-          <p>Wizard Tower</p>
-          <audio class="audioplayer" loop>
-            <source src="/parts/audio/ambience/wizard-tower.mp3" type="audio/mpeg" />
-          </audio>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="album">
+          <div class="page">
+            <div class="card">
+              <div id="blizzard" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-blizzard" class="card-image">
+                  <p class="card-name bg-ambience-name">Blizzard</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">Icy winds howling, snowflakes swirling in a whiteout blizzard storm.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="sandy-beach" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-sandy-beach" class="card-image">
+                  <p class="card-name bg-ambience-name">Sandy Beach</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">Powerful waves crashing against the sandy shore.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="dwarven-city" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-dwarven-city" class="card-image">
+                  <p class="card-name bg-ambience-name">Dwarven City</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">Subterranean streets echo with the clang of hammer on anvil.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="epic-fight" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-epic-fight" class="card-image">
+                  <p class="card-name bg-music-name">Epic Fight</p>
+                </div>
+                <p class="card-desc bg-music-desc">Swords clashed as heroes battled under the drunken tavern's glow.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="ethereal-plane" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-ethereal-plane" class="card-image">
+                  <p class="card-name bg-music-name">Ethereal Plane</p>
+                </div>
+                <p class="card-desc bg-music-desc">A shimmering realm beyond reality, where spirits and dreams converge.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="forest" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-forest" class="card-image">
+                  <p class="card-name bg-ambience-name">Forest</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">A verdant realm of towering trees and mystical creatures awaits.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="green-plains" class="contents">
+                <div id="img-green-plains" class="card-image">
+                  <p class="card-name bg-music-name">Green Plains</p>
+                </div>
+                <p class="card-desc bg-music-desc">Endless green plains, a peaceful rural vista.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="large-city" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-large-city" class="card-image">
+                  <p class="card-name bg-ambience-name">Large City</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">Towering structures engulfed the skyline as the bustling metropolis alive below.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="long-rest" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-long-rest" class="card-image">
+                  <p class="card-name bg-ambience-name">Long Rest</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">Tents pitched, fire crackling, dreams of glory fuel their rest.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="magic-item-shop" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-magic-item-shop" class="card-image">
+                  <p class="card-name bg-music-name">Magic Item Shop</p>
+                </div>
+                <p class="card-desc bg-music-desc">Magical curiosities and enchantments await in the mystical emporium.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="sea-adventure" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-sea-adventure" class="card-image">
+                  <p class="card-name bg-music-name">Sea Adventure</p>
+                </div>
+                <p class="card-desc bg-music-desc">Epic adventure filled with sea beasts and treasure.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div id="volcano" class="contents">
+                <audio class="audioplayer" loop>
+                  <source src="" type="audio/mpeg" />
+                </audio>
+                <div id="img-volcano" class="card-image">
+                  <p class="card-name bg-ambience-name">Volcano</p>
+                </div>
+                <p class="card-desc bg-ambience-desc">Volcano erupts, unleashing molten fury.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="sidekick"></div>
+      <div class="damsel"></div>
+    </main>
+    <footer>
+      <div class="crowd"></div>
+    </footer>
     <script src="audioplayer.js"></script>
   </body>
 </html>
