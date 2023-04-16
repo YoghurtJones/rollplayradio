@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "Lato", sans-serif;
   }
-
+  
 body {
     /* Apply a background color to this element. */
     background-color: dodgerblue;
@@ -65,7 +65,7 @@ header {
     background-color: #262525;
   }
   
-  .pri-nav-left {
+.pri-nav-left {
     /* Control the layout of child elements. */
     flex: 1;
     display: flex;
@@ -75,7 +75,7 @@ header {
     font-size: 16px;
   }
   
-  .pri-nav-middle {
+.pri-nav-middle {
     /* Control the layout of child elements. */
     flex: 1;
     display: flex;
@@ -85,7 +85,7 @@ header {
     gap: 5px;
   }
   
-  .pri-nav-middle input {
+.pri-nav-middle input {
     padding: 5px;
     border-style: solid;
     background-color: #efeff1;
@@ -95,16 +95,16 @@ header {
     line-height: normal;
   }
   
-  .pri-nav-middle input::placeholder {
+.pri-nav-middle input::placeholder {
     color: #9a9a9a;
   }
   
-  .pri-nav-middle input:focus {
+.pri-nav-middle input:focus {
     background-color: white;
     outline: none;
   }
   
-  .pri-nav-middle button {
+.pri-nav-middle button {
     padding: 5px;
     border-style: solid;
     background-color: #efeff1;
@@ -114,7 +114,7 @@ header {
     width: 33px;
   }
   
-  .pri-nav-right {
+.pri-nav-right {
     margin-right: 10px;
     /* Control the layout of child elements. */
     flex: 1;
@@ -124,7 +124,7 @@ header {
     align-items: center;
   }
   
-  .card-new {
+.card-new {
     /* Control the layout of child elements. */
     display: flex;
     /* Position content each element to the horizontal center of parent element.*/
@@ -137,13 +137,13 @@ header {
     box-shadow: 1px 1px 10px #43454379;
   }
   
-  .card-new i {
+.card-new i {
     margin: 0 10px;
     padding: 0;
     font-weight: 700;
   }
   
-  .card-new a {
+.card-new a {
     /* Apply a padding to the text. */
     padding: 5px 5px;
     /* Remove underline on text. */
@@ -154,42 +154,42 @@ header {
     color: black;
   }
   
-  .card-new:hover {
+.card-new:hover {
     background-color: #7cf0bd;
   }
   
-  .hero {
-    height: 750px;
+.hero {
+    /* height: 750px; */
     background: linear-gradient(to bottom, rgb(228, 8, 0), rgba(74, 0, 0, 0.9));
     box-shadow: 1px 1px 10px #43454379;
   }
   
-  .sidekick {
+.sidekick {
     height: 750px;
     background-color: #7cf0bd;
   
     box-shadow: 1px 1px 10px #43454379;
   }
   
-  .damsel {
+.damsel {
     height: 750px;
     background-color: #eb5e28;
   
     box-shadow: 1px 1px 10px #43454379;
   }
   
-  .crowd {
+.crowd {
     height: 150px;
     background-color: #333138;
     box-shadow: 1px 1px 10px #43454379;
   }
   
-  .album {
+.album {
     padding: 20px;
     /* background-color: silver; */
   }
   
-  .page {
+.page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,22 +197,22 @@ header {
     gap: 20px;
   }
   
-  .card {
+.card {
     width: 250px;
     transition: transform 0.2s ease;
   }
   
-  .card:hover {
+.card:hover {
     transform: translatey(-4px);
   }
   
-  .contents {
+.contents {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   
-  .card-name {
+.card-name {
     user-select: none;
     width: 250px;
     padding: 10px 0;
@@ -222,13 +222,13 @@ header {
     color: whitesmoke;
   }
   
-  .card-image {
+.card-image {
     width: 250px;
     height: 250px;
     border-radius: 10px 10px 0 0;
   }
   
-  .card-desc {
+.card-desc {
     user-select: none;
     padding: 5px 10px;
     height: 60px;
@@ -241,29 +241,29 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
   }
   
-  .card-desc p {
+.card-desc p {
     font-size: 16px;
     text-align: center;
   }
   
-  .bg-music-name {
+.bg-music-name {
     background: linear-gradient(to right, rgba(255, 8, 0, 0.8), rgba(199, 0, 0, 0.5));
   }
   
-  .bg-music-desc {
+.bg-music-desc {
     background: linear-gradient(to right, rgba(255, 8, 0), rgba(199, 0, 0));
   }
   
-  .bg-ambience-name {
+.bg-ambience-name {
     background: linear-gradient(to right, rgba(0,158,96,0.8), rgba(16,93,16,0.8));
   
   }
   
-  .bg-ambience-desc {
+.bg-ambience-desc {
     background: linear-gradient(to right, #009E60, #105d10);
   }
   
-  #img-green-plains {
+#img-green-plains {
     background-image: url(/parts/image/green-plains.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -272,16 +272,16 @@ header {
     position: relative;
   }
   
-  #img-green-plains p:first-child {
+#img-green-plains p:first-child {
     position: absolute;
     bottom: 0;
   }
-  
-  #img-green-plains:hover {
+
+#img-green-plains:hover {
     background-size: 210%;
   }
   
-  #img-sandy-beach {
+#img-sandy-beach {
     background-image: url(/parts/image/beach.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -290,16 +290,16 @@ header {
     position: relative;
   }
   
-  #img-sandy-beach p:first-child {
+#img-sandy-beach p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-sandy-beach:hover {
+#img-sandy-beach:hover {
     background-size: 210%;
   }
   
-  #img-volcano {
+#img-volcano {
     background-image: url(/parts/image/volcano.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -308,16 +308,16 @@ header {
     position: relative;
   }
   
-  #img-volcano p:first-child {
+#img-volcano p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-volcano:hover {
+#img-volcano:hover {
     background-size: 210%;
   }
   
-  #img-large-city {
+#img-large-city {
     background-image: url(/parts/image/large-city.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -326,16 +326,16 @@ header {
     position: relative;
   }
   
-  #img-large-city p:first-child {
+#img-large-city p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-large-city:hover {
+#img-large-city:hover {
     background-size: 210%;
   }
   
-  #img-sea-adventure {
+#img-sea-adventure {
     background-image: url(/parts/image/sea-adventure.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -344,16 +344,16 @@ header {
     position: relative;
   }
   
-  #img-sea-adventure p:first-child {
+#img-sea-adventure p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-sea-adventure:hover {
+#img-sea-adventure:hover {
     background-size: 210%;
   }
-  
-  #img-magic-item-shop {
+
+#img-magic-item-shop {
     background-image: url(/parts/image/magic-item-shop.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -362,16 +362,16 @@ header {
     position: relative;
   }
   
-  #img-magic-item-shop p:first-child {
+#img-magic-item-shop p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-magic-item-shop:hover {
+#img-magic-item-shop:hover {
     background-size: 210%;
   }
   
-  #img-blizzard {
+#img-blizzard {
     background-image: url(/parts/image/blizzard.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -380,16 +380,16 @@ header {
     position: relative;
   }
   
-  #img-blizzard p:first-child {
+#img-blizzard p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-blizzard:hover {
+#img-blizzard:hover {
     background-size: 210%;
   }
   
-  #img-dwarven-city {
+#img-dwarven-city {
     background-image: url(/parts/image/dwarven-city.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -398,16 +398,16 @@ header {
     position: relative;
   }
   
-  #img-dwarven-city p:first-child {
+#img-dwarven-city p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-dwarven-city:hover {
+#img-dwarven-city:hover {
     background-size: 210%;
   }
   
-  #img-epic-fight {
+#img-epic-fight {
     background-image: url(/parts/image/epic-fight.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -415,17 +415,17 @@ header {
     transition: background-size 1s ease;
     position: relative;
   }
-  
+
   #img-epic-fight p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-epic-fight:hover {
+#img-epic-fight:hover {
     background-size: 210%;
   }
   
-  #img-ethereal-plane {
+#img-ethereal-plane {
     background-image: url(/parts/image/ethereal-plane.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -434,16 +434,16 @@ header {
     position: relative;
   }
   
-  #img-ethereal-plane p:first-child {
+#img-ethereal-plane p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-ethereal-plane:hover {
+#img-ethereal-plane:hover {
     background-size: 210%;
   }
   
-  #img-forest {
+#img-forest {
     background-image: url(/parts/image/forest.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -452,16 +452,16 @@ header {
     position: relative;
   }
   
-  #img-forest p:first-child {
+#img-forest p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-forest:hover {
+#img-forest:hover {
     background-size: 210%;
   }
   
-  #img-long-rest {
+#img-long-rest {
     background-image: url(/parts/image/long-rest.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -470,11 +470,65 @@ header {
     position: relative;
   }
   
-  #img-long-rest p:first-child {
+#img-long-rest p:first-child {
     position: absolute;
     bottom: 0;
   }
   
-  #img-long-rest:hover {
+#img-long-rest:hover {
+    background-size: 210%;
+  }
+
+#img-monster-lair {
+    background-image: url(/parts/image/monster-lair.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+#img-monster-lair p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+#img-monster-lair:hover {
+    background-size: 210%;
+  }
+
+#img-mt-celestia {
+    background-image: url(/parts/image/mt-celestia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+#img-mt-celestia p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+#img-mt-celestia:hover {
+    background-size: 210%;
+  }
+
+#img-mystery {
+    background-image: url(https://placehold.co/250x250/red/white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+#img-mystery p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+#img-mystery:hover {
     background-size: 210%;
   }
