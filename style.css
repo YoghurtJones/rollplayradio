@@ -532,3 +532,21 @@ header {
 #img-mystery:hover {
     background-size: 210%;
   }
+
+#img-tavern {
+    background-image: url(/parts/image/tavern.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background-size 1s ease;
+    position: relative;
+  }
+  
+#img-tavern p:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  
+#img-tavern:hover {
+    background-size: 210%;
+  }
