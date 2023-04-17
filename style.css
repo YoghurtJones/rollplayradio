@@ -160,7 +160,7 @@ header {
 
 .hero {
   /* height: 750px; */
-  background: linear-gradient(to bottom, rgb(228, 8, 0), rgba(74, 0, 0, 0.9));
+  background: linear-gradient(to bottom, rgb(197, 15, 8), rgba(74, 0, 0, 0.9));
   box-shadow: 1px 1px 10px #43454379;
 }
 
@@ -220,9 +220,9 @@ header {
 
 .card-name {
   user-select: none;
-  margin-bottom: 220px;
+  margin-bottom: 210px;
   width: 100%;
-  padding: 5px 0;
+  padding: 10px 0;
   border-radius: 10px 10px 0 0;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
@@ -306,11 +306,65 @@ header {
   opacity: 1;
 }
 
+#img-ambush {
+  background-image: url(/parts/image/ambush.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 190%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+
+#img-ambush p:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+#img-ambush:hover {
+  background-size: 210%;
+}
+
+#img-beach {
+  background-image: url(/parts/image/beach.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 190%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+
+#img-beach p:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+#img-beach:hover {
+  background-size: 210%;
+}
+
+#img-desert-excursion {
+  background-image: url(/parts/image/desert-excursion.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 190%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+
+#img-desert-excursion p:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+#img-desert-excursion:hover {
+  background-size: 210%;
+}
+
 #img-green-plains {
   background-image: url(/parts/image/green-plains.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -324,29 +378,11 @@ header {
   background-size: 210%;
 }
 
-#img-sandy-beach {
-  background-image: url(/parts/image/beach.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 180%;
-  transition: background-size 1s ease;
-  position: relative;
-}
-
-#img-sandy-beach p:first-child {
-  position: absolute;
-  bottom: 0;
-}
-
-#img-sandy-beach:hover {
-  background-size: 210%;
-}
-
 #img-volcano {
   background-image: url(/parts/image/volcano.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -364,7 +400,7 @@ header {
   background-image: url(/parts/image/large-city.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -382,7 +418,7 @@ header {
   background-image: url(/parts/image/sea-adventure.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -400,7 +436,7 @@ header {
   background-image: url(/parts/image/magic-item-shop.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -418,7 +454,7 @@ header {
   background-image: url(/parts/image/blizzard.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -436,7 +472,7 @@ header {
   background-image: url(/parts/image/dwarven-city.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -454,7 +490,7 @@ header {
   background-image: url(/parts/image/epic-fight.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -472,7 +508,7 @@ header {
   background-image: url(/parts/image/ethereal-plane.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -490,7 +526,7 @@ header {
   background-image: url(/parts/image/forest.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -508,7 +544,7 @@ header {
   background-image: url(/parts/image/long-rest.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -526,7 +562,7 @@ header {
   background-image: url(/parts/image/monster-lair.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -544,7 +580,7 @@ header {
   background-image: url(/parts/image/mt-celestia.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -562,7 +598,7 @@ header {
   background-image: url(/parts/image/mystery.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -580,7 +616,7 @@ header {
   background-image: url(/parts/image/tavern.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -594,11 +630,29 @@ header {
   background-size: 210%;
 }
 
+#img-peaceful-village {
+  background-image: url(/parts/image/peaceful-village.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 190%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+
+#img-peaceful-village p:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+#img-peaceful-village:hover {
+  background-size: 210%;
+}
+
 #img-rain {
   background-image: url(/parts/image/rain.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
@@ -616,7 +670,7 @@ header {
   background-image: url(/parts/image/swamp.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 180%;
+  background-size: 190%;
   transition: background-size 1s ease;
   position: relative;
 }
