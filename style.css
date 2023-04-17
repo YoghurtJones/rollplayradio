@@ -218,44 +218,12 @@ header {
   border-radius: 10px 10px 0 0;
 }
 
-.audio-options {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  opacity: 0.5;
-}
-
-.audio-play {
-  flex: 1;
-  padding: 10px;
-  border-radius: 10px 0 0 0;
-  opacity: 0.5;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.audio-play:hover {
-  opacity: 1;
-}
-
-.audio-mute {
-  flex: 1;
-  padding: 10px;
-  border-radius: 0 10px 0 0;
-  opacity: 0.5;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.audio-mute:hover {
-  opacity: 1;
-}
-
 .card-name {
   user-select: none;
+  margin-bottom: 220px;
   width: 100%;
   padding: 5px 0;
-  border-radius: 10 10px 0 0;
+  border-radius: 10px 10px 0 0;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: whitesmoke;
@@ -293,6 +261,49 @@ header {
 
 .bg-ambience-desc {
   background: linear-gradient(to right, #009e60, #105d10);
+}
+
+.audio-options {
+  margin-top: 214px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+
+.audio-play {
+  flex: 1;
+  padding: 10px;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.audio-play:hover {
+  opacity: 1;
+}
+
+.audio-mute {
+  flex: 1;
+  padding: 10px;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.audio-mute:hover {
+  opacity: 1;
+}
+
+.audio-stop {
+  flex: 1;
+  padding: 10px;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.audio-stop:hover {
+  opacity: 1;
 }
 
 #img-green-plains {
@@ -548,7 +559,7 @@ header {
 }
 
 #img-mystery {
-  background-image: url(https://placehold.co/250x250/red/white);
+  background-image: url(/parts/image/mystery.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 180%;
@@ -580,5 +591,41 @@ header {
 }
 
 #img-tavern:hover {
+  background-size: 210%;
+}
+
+#img-rain {
+  background-image: url(/parts/image/rain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 180%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+
+#img-rain p:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+#img-rain:hover {
+  background-size: 210%;
+}
+
+#img-swamp {
+  background-image: url(/parts/image/swamp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 180%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+
+#img-swamp p:first-child {
+  position: absolute;
+  bottom: 0;
+}
+
+#img-swamp:hover {
   background-size: 210%;
 }

@@ -8,11 +8,51 @@ audioPlayElements.forEach(function (audioPlay, index) {
     var audioElement = audioElements[index];
     if (audioElement.paused) {
       audioElement.play();
+      audioElement.volume = 0.5;
+      audioPlay.classList.replace("fa-play", "fa-pause");
       console.log("Audio element is now playing.");
     } else {
       audioElement.pause();
-      audioElement.currentTime = 0;
+      audioPlay.classList.replace("fa-pause", "fa-play");
       console.log("Audio element is now reset.");
+    }
+  });
+});
+
+//Locally mute audio element.
+
+var audioMuteElements = document.querySelectorAll(".audio-mute");
+var audioElements = document.querySelectorAll(".audio-track");
+
+audioMuteElements.forEach(function (audioMute, index) {
+  audioMute.addEventListener("click", function () {
+    var audioElement = audioElements[index];
+    if (!audioElement.paused && audioElement.volume > 0) {
+      audioElement.volume = 0;
+      audioMute.classList.replace("fa-volume-high", "fa-volume-xmark");
+      console.log("Audio element volume set to 0.");
+    } else {
+      audioElement.volume = 0.5;
+      audioMute.classList.replace("fa-volume-xmark", "fa-volume-high");
+      console.log("Audio element volume set to 1.");
+    }
+  });
+});
+
+var audioStopElements = document.querySelectorAll(".audio-stop");
+var audioElements = document.querySelectorAll(".audio-track");
+var audioPlayElements = document.querySelectorAll(".audio-play");
+
+audioStopElements.forEach(function (audioStop, index) {
+  audioStop.addEventListener("click", function () {
+    var audioElement = audioElements[index];
+    if (!audioElement.paused) {
+      audioElement.pause();
+      audioElement.volume = 0;
+      audioElement.currentTime = 0;
+      audioPlayElements[index].classList.remove("fa-pause");
+      audioPlayElements[index].classList.add("fa-play");
+      console.log("Audio element has been stopped.");
     }
   });
 });
