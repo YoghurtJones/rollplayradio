@@ -203,7 +203,6 @@ header {
 }
 
 .card:hover {
-  cursor: pointer;
   transform: translatey(-4px);
 }
 
@@ -211,6 +210,45 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.card-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+.audio-options {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0.5;
+}
+
+.audio-play {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px 0 0 0;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.audio-play:hover {
+  opacity: 1;
+}
+
+.audio-mute {
+  flex: 1;
+  padding: 10px;
+  border-radius: 0 10px 0 0;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.audio-mute:hover {
+  opacity: 1;
 }
 
 .card-name {
@@ -221,12 +259,6 @@ header {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: whitesmoke;
-}
-
-.card-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px 10px 0 0;
 }
 
 .card-desc {
