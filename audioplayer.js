@@ -1,10 +1,10 @@
 // Locally stop audio element and reset playback
 
-var cardDivs = document.querySelectorAll(".card");
-var audioElements = document.querySelectorAll(".audioplayer");
+var cardDivs = document.querySelectorAll(".card-image");
+var audioElements = document.querySelectorAll(".audio-track");
 
-cardDivs.forEach(function(cardDiv, index) {
-  cardDiv.addEventListener("click", function() {
+cardDivs.forEach(function (cardDiv, index) {
+  cardDiv.addEventListener("click", function () {
     var audioElement = audioElements[index];
     if (audioElement.paused) {
       audioElement.play();
@@ -57,7 +57,7 @@ cardDivs.forEach(function(cardDiv, index) {
 // myDiv.addEventListener('click', () => {
 //   // Get all audio elements on the page
 //   const audioElements = document.querySelectorAll('audio');
-  
+
 //   if (pausedAudioElements.length === 0) {
 //     // Pause each audio element and add it to the array of paused audio elements
 //     audioElements.forEach(audio => {
