@@ -2,13 +2,13 @@
 
 var audioPlayElements = document.querySelectorAll(".audio-play");
 var audioElements = document.querySelectorAll(".audio-track");
+var volumeSliders = document.querySelectorAll(".volume-slider");
 
 audioPlayElements.forEach(function (audioPlay, index) {
   audioPlay.addEventListener("click", function () {
     var audioElement = audioElements[index];
     if (audioElement.paused) {
       audioElement.play();
-      audioElement.volume = 0.5;
       audioPlay.classList.replace("fa-play", "fa-pause");
       console.log("Audio element is now playing.");
     } else {
@@ -16,6 +16,13 @@ audioPlayElements.forEach(function (audioPlay, index) {
       audioPlay.classList.replace("fa-pause", "fa-play");
       console.log("Audio element is now reset.");
     }
+  });
+});
+
+volumeSliders.forEach(function (slider, index) {
+  var audioElement = audioElements[index];
+  slider.addEventListener("input", function () {
+    audioElement.volume = slider.value;
   });
 });
 
@@ -32,7 +39,6 @@ audioMuteElements.forEach(function (audioMute, index) {
       audioMute.classList.replace("fa-volume-high", "fa-volume-xmark");
       console.log("Audio element volume set to 0.");
     } else {
-      audioElement.volume = 0.5;
       audioMute.classList.replace("fa-volume-xmark", "fa-volume-high");
       console.log("Audio element volume set to 1.");
     }
@@ -48,7 +54,6 @@ audioStopElements.forEach(function (audioStop, index) {
     var audioElement = audioElements[index];
     if (!audioElement.paused) {
       audioElement.pause();
-      audioElement.volume = 0;
       audioElement.currentTime = 0;
       audioPlayElements[index].classList.remove("fa-pause");
       audioPlayElements[index].classList.add("fa-play");
