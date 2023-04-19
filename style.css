@@ -134,7 +134,7 @@ header {
   /* Position items vertically center of the parent element. */
   align-items: center;
   /* Apply a background color to this element. */
-  background-color: #7cf0bd;
+  background-color: #ffcc00;
 
   box-shadow: 1px 1px 10px #43454379;
 }
@@ -157,7 +157,7 @@ header {
 }
 
 .card-new:hover {
-  background-color: #7cf0bd;
+  background-color: #ffdc51;
 }
 
 .hero {
@@ -247,6 +247,14 @@ header {
 .card-desc p {
   font-size: 16px;
   text-align: center;
+}
+
+.card-image-new {
+  box-shadow: inset 0 0 20px #ffcc00cc;
+}
+
+.card-desc-new {
+  box-shadow: 0 10px 20px #ffcc00cc;
 }
 
 .bg-music-name {
