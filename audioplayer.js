@@ -29,7 +29,6 @@ volumeSliders.forEach(function (slider, index) {
   });
 });
 
-
 //Locally mute audio element.
 
 var audioMuteElements = document.querySelectorAll(".audio-mute");

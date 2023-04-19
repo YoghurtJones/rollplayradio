@@ -300,18 +300,23 @@ header {
   opacity: 0.8;
 }
 
-input[type="range"] {
+input.volume-slider {
   -webkit-appearance: none; /* Remove default styling */
-  height: 10px; /* Set the height of the slider */
-  border-radius: 5px; /* Set the border radius of the slider track */
-  outline: none; /* Remove the outline */
+  height: 8px;
+  border-radius: 5px;
+  background: whitesmoke;
+  outline: none;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input.volume-slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, red 0%, red calc(var(--val)*1%), green calc(var(--val)*1%), green 100%);
+}
+
+input.volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Remove default styling */
   appearance: none;
-  width: 20px; /* Set the width of the slider thumb */
-  height: 20px; /* Set the height of the slider thumb */
+  width: 15px; /* Set the width of the slider thumb */
+  height: 15px; /* Set the height of the slider thumb */
   background: gold; /* Set the color of the slider thumb */
   border-radius: 50%; /* Set the border radius of the slider thumb */
   cursor: pointer; /* Set the cursor style */
