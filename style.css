@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 body {
   /* Apply a background color to this element. */
   background-color: dodgerblue;
+  caret-color: transparent;
 }
 
 header {
@@ -239,7 +241,7 @@ header {
   font-size: 16px;
   display: flex;
   align-items: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 20px #000000cc;
 }
 
 .card-desc p {
@@ -248,11 +250,11 @@ header {
 }
 
 .bg-music-name {
-  background: linear-gradient(to right, rgba(255, 8, 0, 0.8), rgba(199, 0, 0, 0.5));
+  background: linear-gradient(to right, #5475a090, #2E405790);
 }
 
 .bg-music-desc {
-  background: linear-gradient(to right, rgba(255, 8, 0), rgba(199, 0, 0));
+  background: linear-gradient(to right, #5475a0, #2E4057);
 }
 
 .bg-ambience-name {
@@ -270,13 +272,17 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.audio-options:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .audio-play {
   flex: 1;
   padding: 10px;
   opacity: 0.5;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .audio-play:hover {
@@ -287,12 +293,16 @@ header {
   width: 100px;
   height: 10px;
   margin: 0 10px;
+  opacity: 0.2;
+}
+
+.volume-slider:hover {
+  opacity: 0.8;
 }
 
 input[type="range"] {
   -webkit-appearance: none; /* Remove default styling */
   height: 10px; /* Set the height of the slider */
-  background: #f2f2f2; /* Set the background color of the slider track */
   border-radius: 5px; /* Set the border radius of the slider track */
   outline: none; /* Remove the outline */
 }
@@ -311,7 +321,6 @@ input[type="range"]::-webkit-slider-thumb {
   flex: 1;
   padding: 10px;
   opacity: 0.5;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .audio-mute:hover {
@@ -322,7 +331,6 @@ input[type="range"]::-webkit-slider-thumb {
   flex: 1;
   padding: 10px;
   opacity: 0.5;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .audio-stop:hover {
