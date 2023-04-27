@@ -32,10 +32,10 @@ function togglePlayPause(event) {
   }
 }
 
+// Loop through all the audio volume elements and add an event listener to each input element
 
 const audioVolume = document.querySelectorAll(".audio-volume");
 
-// Loop through all the audio volume elements and add an event listener to each input element
 audioVolume.forEach(volumeElem => {
   const volumeSlider = volumeElem.querySelector('input[type="range"]');
   const audioTrack = volumeElem.closest('.card').querySelector('.audio-track');
@@ -73,7 +73,3 @@ function toggleMute() {
     });
   }
 }
-
-
-
-const audioStop = document.querySelectorAll(".audio-stop");

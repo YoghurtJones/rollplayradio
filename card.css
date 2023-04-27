@@ -79,6 +79,7 @@
   cursor: pointer;
   user-select: none;
 }
+
 .card-bottom {
   width: 100%;
   height: 70px;
@@ -200,7 +201,7 @@
 
 /* Card - Ambience - Forest */
 #img-forest {
-  background-image: url(./images/forest.jpg);
+  background-image: url(./parts/image/forest.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
@@ -213,20 +214,7 @@
 
 /* Card - Music - Magic Item Shop */
 #img-magic-item-shop {
-  background-image: url(./images/magic-item-shop.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 140%;
-  transition: background-size 1s ease;
-  position: relative;
-}
-#img-magic-item-shop:hover {
-  background-size: 160%;
-}
-
-/* Card - Action - Search */
-#img-magic-item-shop {
-  background-image: url(./images/magic-item-shop.jpg);
+  background-image: url(./parts/image/magic-item-shop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
@@ -239,7 +227,7 @@
 
 /* Card - Action - Search */
 #img-search {
-  background-image: url(./images/mystery.png);
+  background-image: url(./parts/image/mystery.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
@@ -252,7 +240,7 @@
 
 /* Card - Enemy - Acererak */
 #img-acererak {
-  background-image: url(./images/Acererak.png);
+  background-image: url(./parts/image/volcano.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
