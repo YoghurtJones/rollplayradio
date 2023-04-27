@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./card.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c430204919.js" crossorigin="anonymous"></script>
+    <title>rollplayrad.io</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-company-name">
+          <h1>RollPlayRad.io</h1>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Packs</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Subscribe</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="demo">
+      <div>
+        <h1 class="demo-title">Build your adventure atmosphere!</h1>
+      </div>
+      <!-- Card Album Start -->
+      <div class="album">
+        <!-- Ambience Card -->
+        <div id="forest">
+          <div class="card card-ambience-hover">
+            <div class="card-top card-ambience">
+              <h1>Forest</h1>
+            </div>
+            <div id="img-forest" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/ambience/forest.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-ambience">
+              <p>A verdant realm of towering trees and mystical creatures awaits.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Music Card -->
+        <div id="magic-item-shop">
+          <div class="card card-music-hover">
+            <div class="card-top card-music">
+              <h1>Magic Item Shop</h1>
+            </div>
+            <div id="img-magic-item-shop" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/music/magic-item-shop.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-music">
+              <p>Magical curiosities and enchantments await in the mystical emporium.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Action Card -->
+        <div id="search">
+          <div class="card card-action-hover">
+            <div class="card-top card-action">
+              <h1>Search</h1>
+            </div>
+            <div id="img-search" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/music/mystery.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-action">
+              <p>Search the area for what the eyes can't see.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Enemy Card -->
+        <div id="acererak">
+          <div class="card card-enemy-hover">
+            <div class="card-top card-enemy">
+              <h1>Necromancer</h1>
+            </div>
+            <div id="img-acererak" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/ambience/volcano.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-enemy">
+              <p>A powerful spellcaster found in The Tomb of Horrors.</p>
+            </div>
+          </div>
+        </div>
+        <div id="info">
+          <h1>What is <span style="color: gold">RollPlayRad.io</span>?</h1>
+          <p>
+            You've just created your first table-top adventure, the story is ready and so are the players, but what about the atmosphere? That's where
+            we come in!
+          </p>
+          <p>
+            With an offering of <span style="color: var(--teagreen)">ambience</span>, <span style="color: var(--slategray)">music</span>,
+            <span style="color: var(--lemonchiffon)">action</span> and <span style="color: var(--darknessred)">enemy</span> sound cards, for you to
+            build the perfect soundscape for your session!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="packs">
+      <h1>Sounds currently available:</h1>
+      <div class="pack-type">
+        <div class="pack-ambience">
+          <h2>Ambience</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Beach</li>
+              <li>Forest</li>
+              <li>Rain</li>
+              <li>Swamp</li>
+              <li>Tavern</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack-music">
+          <h2>Music</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Ambush</li>
+              <li>Desert Excursion</li>
+              <li>Green Plains</li>
+              <li>Long Rest</li>
+              <li>Magic Item Shop</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack-action">
+          <h2>Action</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Attack</li>
+              <li>Cast Spell</li>
+              <li>Crowd Cheer</li>
+              <li>Search</li>
+              <li>Teleport</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack-enemy hover-container">
+          <h2>Enemy</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Demon</li>
+              <li>Dragon</li>
+              <li>Goblin</li>
+              <li>Necromancer</li>
+              <li>Orc</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="membership"></div>
+    <div id="about"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
