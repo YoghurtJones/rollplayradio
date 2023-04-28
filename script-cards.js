@@ -107,10 +107,30 @@ function controlAudioPlayer(audioPlayerID) {
 // Call the function for each audio player on the page
 
 // AMBIENCE
+controlAudioPlayer('beach');
+controlAudioPlayer('blizzard');
 controlAudioPlayer('forest');
+controlAudioPlayer('monster-lair');
+controlAudioPlayer('rain');
+controlAudioPlayer('swamp');
+controlAudioPlayer('tavern');
+controlAudioPlayer('volcano');
 
 // MUSIC
+controlAudioPlayer('ambush');
+controlAudioPlayer('desert-excursion');
+controlAudioPlayer('dwarven-city');
+controlAudioPlayer('epic-fight');
+controlAudioPlayer('ethereal-plane');
+controlAudioPlayer('green-plains');
+controlAudioPlayer('large-city');
+controlAudioPlayer('long-rest');
 controlAudioPlayer('magic-item-shop');
+controlAudioPlayer('mt-celestia');
+controlAudioPlayer('mystery');
+controlAudioPlayer('peaceful-village');
+controlAudioPlayer('sea-adventure');
+controlAudioPlayer('session-zero');
 
 // ACTION
 controlAudioPlayer('search');
