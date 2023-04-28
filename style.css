@@ -54,9 +54,21 @@ nav {
     color: gold;
 }
 
+.nav-company-name a {
+    list-style: none;
+    text-decoration: none;
+    color: gold;
+}
+
 .nav-menu {
     margin: 10px 20px 10px 10px;
     display: flex;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-menu ul {

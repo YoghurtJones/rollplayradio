@@ -21,10 +21,10 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Hide div after scrolling down 130 pixels
+// Hide div after scrolling down 150 pixels
 window.addEventListener('scroll', function() {
   const myDiv = document.getElementById('alert');
-  if (window.scrollY > 130) {
+  if (window.scrollY > 150) {
     myDiv.style.display = 'none';
   } else {
     myDiv.style.display = 'flex';

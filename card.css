@@ -18,6 +18,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* background: var(--darkergray); */
+}
+
+.bg-album {
+  background: var(--darkergray);
 }
 
 /* Card top, middle, audio and bottom styles*/
