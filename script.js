@@ -99,6 +99,7 @@ function controlAudioPlayer(audioPlayerID) {
     audioTrack.currentTime = 0;
     playButton.classList.remove('fa-pause');
     playButton.classList.add('fa-play');
+    cardActive.classList.remove('card-active');
     console.log("Card audio stopped.");
   });
 }
