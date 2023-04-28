@@ -447,7 +447,7 @@
 
 /* Card - Music - Mt Celestia */
 #img-mt-celestia {
-  background-image: url(./parts/image/magic-item-shop.jpg);
+  background-image: url(./parts/image/mt-celestia.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
@@ -460,7 +460,7 @@
 
 /* Card - Music - Mystery */
 #img-mystery {
-  background-image: url(./parts/image/magic-item-shop.jpg);
+  background-image: url(./parts/image/mystery.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
