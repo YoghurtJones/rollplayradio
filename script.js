@@ -12,10 +12,12 @@ function controlAudioPlayer(audioPlayerID) {
   playButton.addEventListener('click', function() {
     if (audioTrack.paused) {
       audioTrack.play();
-      // playButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+      playButton.classList.remove('fa-play');
+      playButton.classList.add('fa-pause');
     } else {
       audioTrack.pause();
-      // playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+      playButton.classList.remove('fa-pause');
+      playButton.classList.add('fa-play');
     }
   });
 
@@ -25,19 +27,20 @@ function controlAudioPlayer(audioPlayerID) {
   });
 
   muteButton.addEventListener('click', function() {
-    if (audioTrack.muted) {
-      audioTrack.muted = false;
-      // muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-    } else {
+    if (audioTrack.play && !audioTrack.muted) {
+      muteButton.classList.remove('fa-volume-high');
+      muteButton.classList.add('fa-volume-off');
       audioTrack.muted = true;
-      // muteButton.innerHTML = '<i class="fa-solid fa-volume-mute"></i>';
+    } else {
+      audioTrack.muted = false;
+      muteButton.classList.remove('fa-volume-off');
+      muteButton.classList.add('fa-volume-high');
     }
   });
 
   stopButton.addEventListener('click', function() {
     audioTrack.pause();
     audioTrack.currentTime = 0;
-    // playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
   });
 }
 
@@ -45,4 +48,4 @@ function controlAudioPlayer(audioPlayerID) {
 controlAudioPlayer('forest');
 controlAudioPlayer('magic-item-shop');
 controlAudioPlayer('search');
-controlAudioPlayer('acererak');
+controlAudioPlayer('necromancer');
