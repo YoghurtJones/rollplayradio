@@ -1,75 +1,48 @@
-let audioVolumes = document.querySelectorAll("input[name='volume-slider']");
-audioVolumes.forEach(function (audioVolume) {
-  audioVolume.oninput = function () {
-    let progressBar = this.parentNode.querySelector("progress");
-    progressBar.value = audioVolume.value;
-    console.log(`The volume is currently ${progressBar.value}`);
-  };
-});
+// Function to control an audio player
+function controlAudioPlayer(audioPlayerID) {
+  // Get the relevant elements for the audio player
+  var playButton = document.querySelector('#' + audioPlayerID + ' .audio-play i');
+  var audioTrack = document.querySelector('#' + audioPlayerID + ' .audio-track');
+  var volumeSlider = document.querySelector('#' + audioPlayerID + ' input[type="range"]');
+  var volumeLevel = document.querySelector('#' + audioPlayerID + ' progress');
+  var muteButton = document.querySelector('#' + audioPlayerID + ' .audio-mute i');
+  var stopButton = document.querySelector('#' + audioPlayerID + ' .audio-stop i');
 
-// 
-// 
-// 
-
-// How to play/pause audio on card and toggle icon
-
-const playBtns = document.querySelectorAll('.card-middle .audio-play i');
-playBtns.forEach(playBtn => {
-  playBtn.addEventListener('click', togglePlayPause);
-});
-
-function togglePlayPause(event) {
-  const playBtn = event.target;
-  const audioTrack = playBtn.closest('.card').querySelector('.audio-track');
-  if (playBtn.classList.contains('fa-play')) {
-    playBtn.classList.remove('fa-play');
-    playBtn.classList.add('fa-pause');
-    audioTrack.play();
-  } else {
-    playBtn.classList.remove('fa-pause');
-    playBtn.classList.add('fa-play');
-    audioTrack.pause();
-  }
-}
-
-// Loop through all the audio volume elements and add an event listener to each input element
-
-const audioVolume = document.querySelectorAll(".audio-volume");
-
-audioVolume.forEach(volumeElem => {
-  const volumeSlider = volumeElem.querySelector('input[type="range"]');
-  const audioTrack = volumeElem.closest('.card').querySelector('.audio-track');
-
-  // Add an event listener to the volume slider input element
-  volumeSlider.addEventListener('input', () => {
-    const volume = parseFloat(volumeSlider.value);
-    audioTrack.volume = volume;
+  // Set up event listeners for the audio player
+  playButton.addEventListener('click', function() {
+    if (audioTrack.paused) {
+      audioTrack.play();
+      // playButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    } else {
+      audioTrack.pause();
+      // playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+    }
   });
-});
 
+  volumeSlider.addEventListener('input', function() {
+    audioTrack.volume = volumeSlider.value;
+    volumeLevel.value = volumeSlider.value;
+  });
 
-// How to mute/unmute audio on card and toggle icon
-const audioMute = document.querySelectorAll(".audio-mute i");
-const audioTrack = document.querySelectorAll(".audio-track");
+  muteButton.addEventListener('click', function() {
+    if (audioTrack.muted) {
+      audioTrack.muted = false;
+      // muteButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    } else {
+      audioTrack.muted = true;
+      // muteButton.innerHTML = '<i class="fa-solid fa-volume-mute"></i>';
+    }
+  });
 
-audioMute.forEach(muteBtn => {
-  muteBtn.addEventListener('click', toggleMute);
-});
-
-function toggleMute() {
-  if (this.classList.contains('fa-volume-high')) {
-    this.classList.remove('fa-volume-high');
-    this.classList.add('fa-volume-off');
-    audioTrack.forEach(track => {
-      track.muted = true;
-      track.dataset.muted = "true";
-    });
-  } else {
-    this.classList.remove('fa-volume-off');
-    this.classList.add('fa-volume-high');
-    audioTrack.forEach(track => {
-      track.muted = false;
-      track.dataset.muted = "false";
-    });
-  }
+  stopButton.addEventListener('click', function() {
+    audioTrack.pause();
+    audioTrack.currentTime = 0;
+    // playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+  });
 }
+
+// Call the function for each audio player on the page
+controlAudioPlayer('forest');
+controlAudioPlayer('magic-item-shop');
+controlAudioPlayer('search');
+controlAudioPlayer('acererak');

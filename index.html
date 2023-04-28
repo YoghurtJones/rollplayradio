@@ -47,7 +47,7 @@
                 <audio class="audio-track" loop>
                   <source src="./parts/audio/ambience/forest.mp3" type="audio/mpeg" />
                 </audio>
-                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
                 <progress min="0" max="1" value=".5"></progress>
               </div>
               <div class="audio-mute">
@@ -80,7 +80,7 @@
                 </audio>
               </div>
               <div class="audio-volume">
-                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
                 <progress min="0" max="1" value=".5"></progress>
               </div>
               <div class="audio-mute">
@@ -109,11 +109,11 @@
             <div class="card-audio">
               <div class="audioplayer">
                 <audio class="audio-track" loop>
-                  <source src="./parts/audio/music/mystery.mp3" type="audio/mpeg" />
+                  <source src="./parts/audio/ambience/search.mp3" type="audio/mpeg" />
                 </audio>
               </div>
               <div class="audio-volume">
-                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
                 <progress min="0" max="1" value=".5"></progress>
               </div>
               <div class="audio-mute">
@@ -146,7 +146,7 @@
                 </audio>
               </div>
               <div class="audio-volume">
-                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" />
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
                 <progress min="0" max="1" value=".5"></progress>
               </div>
               <div class="audio-mute">
@@ -162,15 +162,15 @@
           </div>
         </div>
         <div id="info">
-          <h1>What is <span style="color: gold">RollPlayRad.io</span>?</h1>
+          <h1>What is <span class="brand-color">RollPlayRad.io</span>?</h1>
           <p>
             You've just created your first table-top adventure, the story is ready and so are the players, but what about the atmosphere? That's where
             we come in!
           </p>
           <p>
-            With an offering of <span style="color: var(--teagreen)">ambience</span>, <span style="color: var(--slategray)">music</span>,
-            <span style="color: var(--lemonchiffon)">action</span> and <span style="color: var(--darknessred)">enemy</span> sound cards, for you to
-            build the perfect soundscape for your session!
+            With an offering of <span class="cat-ambience">ambience</span>, <span class="cat-music">music</span>,
+            <span class="cat-action">action</span> and <span class="cat-enemy">enemy</span> sound cards, for you to build the perfect soundscape for
+            your session!
           </p>
         </div>
       </div>

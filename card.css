@@ -43,7 +43,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none;
 }
 .card-top h1 {
   margin-top: 5px;
@@ -63,7 +62,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  user-select: none;
 }
 
 .audio-play i {
@@ -77,7 +75,6 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  user-select: none;
 }
 
 .card-bottom {
@@ -87,7 +84,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none;
 }
 .card-bottom p {
   margin: 5px;
