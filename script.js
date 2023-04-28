@@ -1,6 +1,41 @@
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+// fade div after scrolling down 100 pixels
+window.addEventListener('scroll', function() {
+  const myDiv = document.getElementById('alert');
+  if (window.scrollY > 100) {
+    // myDiv.style.display = 'none';
+    myDiv.classList.add('hidden');
+  } else {
+    // myDiv.style.display = 'flex';
+    myDiv.classList.remove('hidden');
+  }
+});
+
+// Hide div after scrolling down 150 pixels
+window.addEventListener('scroll', function() {
+  const myDiv = document.getElementById('alert');
+  if (window.scrollY > 150) {
+    myDiv.style.display = 'none';
+  } else {
+    myDiv.style.display = 'flex';
+  }
+});
+
+
 // Function to control an audio player
 function controlAudioPlayer(audioPlayerID) {
   // Get the relevant elements for the audio player
+  var cardActive = document.querySelector('#' + audioPlayerID + ' .card');
   var playButton = document.querySelector('#' + audioPlayerID + ' .audio-play i');
   var audioTrack = document.querySelector('#' + audioPlayerID + ' .audio-track');
   var volumeSlider = document.querySelector('#' + audioPlayerID + ' input[type="range"]');
@@ -14,11 +49,13 @@ function controlAudioPlayer(audioPlayerID) {
       audioTrack.play();
       playButton.classList.remove('fa-play');
       playButton.classList.add('fa-pause');
+      cardActive.classList.toggle('card-active');
       console.log("Card audio playing.");
     } else {
       audioTrack.pause();
       playButton.classList.remove('fa-pause');
       playButton.classList.add('fa-play');
+      cardActive.classList.remove('card-active');
       console.log("Card audio paused.");
     }
   });

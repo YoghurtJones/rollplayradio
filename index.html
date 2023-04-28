@@ -18,12 +18,15 @@
         </div>
         <div class="nav-menu">
           <ul>
-            <li><a href="" target="_blank" rel="noopener noreferrer">Packs</a></li>
-            <li><a href="" target="_blank" rel="noopener noreferrer">Subscribe</a></li>
-            <li><a href="" target="_blank" rel="noopener noreferrer">About</a></li>
+            <li><a href="" target="_blank" rel="noopener noreferrer">Sounds</a></li>
+            <li><a href="#about" target="_blank" rel="" class="smooth-scroll">About</a></li>
+            <li><a href="#contact" target="_blank" rel="noopener noreferrer">Contact</a></li>
           </ul>
         </div>
       </nav>
+      <div id="alert">
+        <p>Known bug: Volume-slider currently doesn't work on mobile.</p>
+      </div>
     </header>
     <div id="demo">
       <div>
@@ -141,7 +144,7 @@
             </div>
             <div class="card-audio">
               <div class="audioplayer">
-                <audio class="audio-track" loop>
+                <audio class="audio-track">
                   <source src="./parts/audio/enemy/necromancer.mp3" type="audio/mpeg" />
                 </audio>
               </div>
@@ -176,7 +179,7 @@
       </div>
     </div>
     <div id="packs">
-      <h1>Sounds currently available:</h1>
+      <h1>Currently available audio catalogue</h1>
       <div class="pack-type">
         <div class="pack-ambience">
           <h2>Ambience</h2>
@@ -228,8 +231,27 @@
         </div>
       </div>
     </div>
-    <div id="membership"></div>
-    <div id="about"></div>
+    <div id="about">
+      <h1>Who is developing <span class="brand-color">RollPlayRad.io?</span></h1>
+      <p>At this point it is just a passion project developed by one learning front-end developer, me! YoghurtJones!</p>
+      <p>Slowly teaching myself the front-end fundamentals of HTML, CSS and Javascript, back-end comes later.</p>
+      <p>
+        After hearing about friends who play and lead table-top fantasy games such as Dungeons and Dragons, always discovering the same
+        over-complicated challenge of audio from existing offerings on the internet.
+      </p>
+      <p>The objective is to provide a simple UI to deliver audio tracks that can be independently be controlled across standard audio options.</p>
+      <p>An amount of the audio is created by myself and my brother while the remainder being provided using a subscription to EpidemicSounds.</p>
+    </div>
+    <div id="contact">
+      <h1>How can you reach me?</h1>
+      <p>
+        Feel free to reach out to me on
+        <a href="https://www.discord.com"><i class="discord fa-brands fa-discord"></i></a>
+        <a href="https://github.com"><i class="github fa-brands fa-github"></i></a>
+        <a href="https://www.reddit.com"><i class="reddit fa-brands fa-reddit"></i> </a>
+        <a href="https://twitter.com"><i class="twitter fa-brands fa-twitter"></i></a>
+      </p>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -3,6 +3,7 @@
     --lightgray: #818AA3;
     --darkgray: #313543;
     --darkergray: #1f222f;
+    --abyss: #101116;
     --teagreen: #75a743;
     --teagreendark: #436a1d;
     --lemonchiffon: #de9e41;
@@ -26,7 +27,7 @@ body {
 }
 
 header {
-    padding: 10px;
+    padding: 10px 0 0 0;
     z-index: 1000;
     position: sticky;
     top: 0;
@@ -78,10 +79,33 @@ nav {
     color: gold;
 }
 
+#alert {
+    width: 100%;
+    height: 30px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+
+#alert.hidden {
+    opacity: 0;
+}
+
+#alert p {
+    padding: 10px 0;
+}
+
 #demo {
-    background: var(--darkergray);
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/023/094/088/4k/tobias-hofmann-forest-night.jpg?1578063534);
-    background-blend-mode: multiply;
+    background: var(--abyss);
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -95,6 +119,9 @@ nav {
     font-size: 40px;
     -webkit-user-select: none;
     user-select: none;
+
+    opacity: 0;
+    animation: reveal 1s ease .5s forwards;
 }
 
 #info {
@@ -104,8 +131,21 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    opacity: 0;
     -webkit-user-select: none;
     user-select: none;
+    animation: reveal 1s ease 1.5s forwards;
+}
+
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      /* transform: scale(.8); */
+    }
+    100% {
+      opacity: 1;
+      /* transform: scale(1); */
+    }
 }
 
 #info h1 {
@@ -143,7 +183,7 @@ nav {
 
 #packs {
     padding: 20px;
-    background: var(--darkgray);
+    background: var(--darkergray);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,3 +255,73 @@ nav {
 .pack-enemy {
     background: linear-gradient(to right bottom, var(--darknessred), var(--darknessredder));
 }
+
+
+#about {
+    background: var(--abyss);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#about h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#about p {
+    max-width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#contact {
+    background: var(--darkergray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#contact p {
+    max-width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#contact a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.discord {
+    color: #5865F2;
+}
+
+.github {
+    color: white;
+    cursor: pointer;
+}
+
+.reddit {
+    color: #FF4500;
+}
+
+.twitter {
+    color: #1D9BF0;
+}
+
