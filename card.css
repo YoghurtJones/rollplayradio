@@ -235,14 +235,14 @@
 }
 
 /* Card - Enemy - Acererak */
-#img-acererak {
-  background-image: url(./parts/image/volcano.jpg);
+#img-necromancer {
+  background-image: url(./parts/image/necromancer.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
   transition: background-size 1s ease;
   position: relative;
 }
-#img-acererak:hover {
+#img-necromancer:hover {
   background-size: 160%;
 }
