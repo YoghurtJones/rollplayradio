@@ -60,6 +60,8 @@ function controlAudioPlayer(audioPlayerID) {
   stopButton.addEventListener('click', function() {
     audioTrack.pause();
     audioTrack.currentTime = 0;
+    playButton.classList.remove('fa-pause');
+    playButton.classList.add('fa-play');
     console.log("Card audio stopped.");
   });
 }

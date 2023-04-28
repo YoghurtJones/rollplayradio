@@ -79,9 +79,9 @@ nav {
 }
 
 #demo {
+    background: var(--darkergray);
     background-image: url(https://cdna.artstation.com/p/assets/images/images/023/094/088/4k/tobias-hofmann-forest-night.jpg?1578063534);
-    background-size: 100%;
-    background-position: center;
+    background-blend-mode: multiply;
     display: flex;
     flex-direction: column;
     padding: 20px;
