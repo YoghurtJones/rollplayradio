@@ -14,16 +14,33 @@ function controlAudioPlayer(audioPlayerID) {
       audioTrack.play();
       playButton.classList.remove('fa-play');
       playButton.classList.add('fa-pause');
+      console.log("Card audio playing.");
     } else {
       audioTrack.pause();
       playButton.classList.remove('fa-pause');
       playButton.classList.add('fa-play');
+      console.log("Card audio paused.");
     }
   });
 
   volumeSlider.addEventListener('input', function() {
     audioTrack.volume = volumeSlider.value;
     volumeLevel.value = volumeSlider.value;
+    console.log("Volume slider input received " + volumeSlider.value + ".");
+  });
+
+  volumeSlider.addEventListener('touchstart', function() {
+    console.log("Volume slider touch started.");
+  });
+
+  volumeSlider.addEventListener('touchmove', function() {
+    audioTrack.volume = volumeSlider.value;
+    volumeLevel.value = volumeSlider.value;
+    console.log("Volume slider touch move.");
+  });
+
+  volumeSlider.addEventListener('touchend', function() {
+    console.log("Volume slider touch end.");
   });
 
   muteButton.addEventListener('click', function() {
@@ -31,16 +48,19 @@ function controlAudioPlayer(audioPlayerID) {
       muteButton.classList.remove('fa-volume-high');
       muteButton.classList.add('fa-volume-off');
       audioTrack.muted = true;
+      console.log("Card audio muted.");
     } else {
       audioTrack.muted = false;
       muteButton.classList.remove('fa-volume-off');
       muteButton.classList.add('fa-volume-high');
+      console.log("Card audio unmuted.");
     }
   });
 
   stopButton.addEventListener('click', function() {
     audioTrack.pause();
     audioTrack.currentTime = 0;
+    console.log("Card audio stopped.");
   });
 }
 
