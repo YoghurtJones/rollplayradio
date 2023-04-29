@@ -510,6 +510,32 @@
   background-size: 160%;
 }
 
+/* Card - Music - The-End */
+#img-the-end {
+  background-image: url(./parts/image/shadow-alley.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+#img-session-zero:hover {
+  background-size: 160%;
+}
+
+/* Card - Music - Intermission */
+#img-intermission {
+  background-image: url(./parts/image/sewer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+#img-intermission:hover {
+  background-size: 160%;
+}
+
 
 /* Card - Action - Search */
 #img-search {

@@ -131,6 +131,8 @@ controlAudioPlayer('mystery');
 controlAudioPlayer('peaceful-village');
 controlAudioPlayer('sea-adventure');
 controlAudioPlayer('session-zero');
+controlAudioPlayer('the-end');
+controlAudioPlayer('intermission');
 
 // ACTION
 controlAudioPlayer('search');
