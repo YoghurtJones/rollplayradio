@@ -29,6 +29,8 @@ function controlAudioPlayer(audioPlayerID) {
   var audioTrack = document.querySelector('#' + audioPlayerID + ' .audio-track');
   var volumeSlider = document.querySelector('#' + audioPlayerID + ' input[type="range"]');
   var volumeLevel = document.querySelector('#' + audioPlayerID + ' progress');
+  var volumeDown = document.querySelector('#' + audioPlayerID + ' .vol-dwn');
+  var volumeUp = document.querySelector('#' + audioPlayerID + ' .vol-up');
   var muteButton = document.querySelector('#' + audioPlayerID + ' .audio-mute i');
   var stopButton = document.querySelector('#' + audioPlayerID + ' .audio-stop i');
 
@@ -49,30 +51,33 @@ function controlAudioPlayer(audioPlayerID) {
     }
   });
 
-  volumeSlider.addEventListener('input', function() {
-    audioTrack.volume = volumeSlider.value;
-    volumeLevel.value = volumeSlider.value;
-    console.log("Volume slider clicked " + volumeSlider.value + ".");
+  volumeDown.addEventListener('click', function() {
+    if(audioTrack.volume >= 0.1 && audioTrack.volume <= 1) {
+      audioTrack.volume -= 0.1;
+    }else {
+      console.log('Volume is 0.');
+    }
+  })
+
+  volumeUp.addEventListener('click', function() {
+    if(audioTrack.volume >= 0 && audioTrack.volume < 1) { // use the correct condition
+      audioTrack.volume += 0.1; // use "+=" to decrease the volume
+    } else {
+      console.log('Volume is already at maximum.'); // update the console message
+    }
   });
+  
 
-  volumeSlider.addEventListener('change', function() {
-    audioTrack.volume = volumeSlider.value;
-    volumeLevel.value = volumeSlider.value;
-    console.log("Volume slider change received " + volumeSlider.value + ".");
-  });
-
-  // volumeSlider.addEventListener('touchstart', function() {
-  //   console.log("Volume slider touch started.");
-  // });
-
-  // volumeSlider.addEventListener('touchmove', function() {
+  // volumeSlider.addEventListener('input', function() {
   //   audioTrack.volume = volumeSlider.value;
   //   volumeLevel.value = volumeSlider.value;
-  //   console.log("Volume slider touch move.");
+  //   console.log("Volume slider clicked.");
   // });
 
-  // volumeSlider.addEventListener('touchend', function() {
-  //   console.log("Volume slider touched " + volumeSlider.value + ".");
+  // volumeSlider.addEventListener('change', function() {
+  //   audioTrack.volume = volumeSlider.value;
+  //   volumeLevel.value = volumeSlider.value;
+  //   console.log("Volume slider change received " + volumeSlider.value + ".");
   // });
 
   muteButton.addEventListener('click', function() {
@@ -112,11 +117,11 @@ function controlAudioPlayer(audioPlayerID) {
 // AMBIENCE
 controlAudioPlayer('forest');
 
-// MUSIC
-controlAudioPlayer('magic-item-shop');
+// // MUSIC
+// controlAudioPlayer('magic-item-shop');
 
-// ACTION
-controlAudioPlayer('search');
+// // ACTION
+// controlAudioPlayer('search');
 
-// ENEMY
-controlAudioPlayer('necromancer');
+// // ENEMY
+// controlAudioPlayer('necromancer');
