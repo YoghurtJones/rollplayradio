@@ -52,22 +52,28 @@ function controlAudioPlayer(audioPlayerID) {
   volumeSlider.addEventListener('input', function() {
     audioTrack.volume = volumeSlider.value;
     volumeLevel.value = volumeSlider.value;
-    console.log("Volume slider input received " + volumeSlider.value + ".");
+    console.log("Volume slider clicked " + volumeSlider.value + ".");
   });
 
-  volumeSlider.addEventListener('touchstart', function() {
-    console.log("Volume slider touch started.");
-  });
-
-  volumeSlider.addEventListener('touchmove', function() {
+  volumeSlider.addEventListener('change', function() {
     audioTrack.volume = volumeSlider.value;
     volumeLevel.value = volumeSlider.value;
-    console.log("Volume slider touch move.");
+    console.log("Volume slider change received " + volumeSlider.value + ".");
   });
 
-  volumeSlider.addEventListener('touchend', function() {
-    console.log("Volume slider touch end.");
-  });
+  // volumeSlider.addEventListener('touchstart', function() {
+  //   console.log("Volume slider touch started.");
+  // });
+
+  // volumeSlider.addEventListener('touchmove', function() {
+  //   audioTrack.volume = volumeSlider.value;
+  //   volumeLevel.value = volumeSlider.value;
+  //   console.log("Volume slider touch move.");
+  // });
+
+  // volumeSlider.addEventListener('touchend', function() {
+  //   console.log("Volume slider touched " + volumeSlider.value + ".");
+  // });
 
   muteButton.addEventListener('click', function() {
     if (audioTrack.play && !audioTrack.muted) {
