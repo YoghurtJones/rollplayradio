@@ -91,6 +91,14 @@ function controlAudioPlayer(audioPlayerID) {
     cardActive.classList.remove('card-active');
     console.log("Card audio stopped.");
   });
+
+  audioTrack.addEventListener('ended', function() {
+    audioTrack.currentTime = 0;
+    playButton.classList.remove('fa-pause');
+    playButton.classList.add('fa-play');
+    cardActive.classList.remove('card-active');
+    console.log("Card audio ended.");
+  });
 }
 
 // Call the function for each audio player on the page
