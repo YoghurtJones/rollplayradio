@@ -128,12 +128,12 @@
   cursor: pointer;
 }
 
-/* .audio-volume {
+.audio-volume {
   flex: 2;
   margin: 0 7px 0 10px;
-} */
+}
 
-.vol-up {
+/* .vol-up {
   flex: 1;
   margin: 0 2px 0 2px;
   width: 50px;
@@ -151,7 +151,7 @@
   background: none;
   border: none;
   color: white;
-}
+} */
 
 .audio-mute {
   flex: 1;
