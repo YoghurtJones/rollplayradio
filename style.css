@@ -36,14 +36,13 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .nav-company-name {
     display: flex;
-    margin: 10px 10px 10px 20px;
+    margin: 10px;
     align-items: center;
 }
 
@@ -194,13 +193,12 @@ nav {
 }
 
 #packs {
-    padding: 20px;
+    padding: 20px 0 10px 0;
     background: var(--darkergray);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 #packs h1 {
@@ -214,30 +212,37 @@ nav {
     padding-bottom: 5px;
     border-bottom: 2px solid var(--paledogwood);
 }
-#packs p {
-    padding: px;
-    font-size: 18px;
-    color: white;
-}
 
 #packs ul {
-    width: 250px;
     padding-top: 5px;
-    list-style: none;
     color: white;
+    text-align: left;
 }
 
 #packs li {
-    padding: 5px;
-    list-style: none;
+    padding: 3px 0;
+    width: 150px;
     font-size: 18px;
+    list-style: none;
+    text-align: center;
+}
+
+#packs a {
+    list-style: none;
+    text-decoration: none;
+    color: gold;
+}
+
+#packs p {
+    padding: 5px;
+    font-size: 18px;
+    color: white;
 }
 
 .pack-type {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -246,11 +251,9 @@ nav {
 .pack-action,
 .pack-enemy {
     flex: 1;
-    width: 200px;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
