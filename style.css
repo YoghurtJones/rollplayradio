@@ -50,7 +50,7 @@ nav {
     -webkit-user-select: none;
     user-select: none;
     font-size: 22px;
-    color: gold;
+    color: #ffd700;
 }
 
 .nav-company-name a {
@@ -340,55 +340,3 @@ nav {
 .twitter {
     color: #1D9BF0;
 }
-
-@media only screen and (max-width: 828px) {
-    /* Your CSS styles for iPhone XR */
-    header {
-      padding: 5px 0 0 0;
-    }
-  
-    .nav-company-name h1 {
-      font-size: 18px;
-    }
-  
-    .nav-menu {
-      margin: 5px 10px 5px 5px;
-    }
-  
-    .nav-menu a {
-      font-size: 16px;
-    }
-  
-    .demo-title {
-      font-size: 30px;
-      padding: 20px 0;
-    }
-  
-    #info h1 {
-      font-size: 24px;
-    }
-  
-    #info p {
-      font-size: 16px;
-    }
-  
-    #packs h1 {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
-  
-    #packs h2 {
-      font-size: 20px;
-    }
-  
-    #packs p {
-      font-size: 16px;
-    }
-  
-    #packs li {
-      padding: 3px;
-      font-size: 16px;
-    }
-  }
-  

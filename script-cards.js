@@ -120,6 +120,7 @@ controlAudioPlayer('dwarven-city');
 controlAudioPlayer('epic-fight');
 controlAudioPlayer('ethereal-plane');
 controlAudioPlayer('green-plains');
+controlAudioPlayer('humble-beginnings');
 controlAudioPlayer('large-city');
 controlAudioPlayer('long-rest');
 controlAudioPlayer('magic-item-shop');
