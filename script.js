@@ -9,16 +9,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// fade div after scrolling down 150 pixels
-window.addEventListener('scroll', function() {
-  const myDiv = document.getElementById('alert');
-  if (window.scrollY > 300) {
-    myDiv.style.display = 'none';
-    myDiv.classList.add('hidden');
-  } else {
-    myDiv.classList.remove('hidden');
-  }
-});
+// // fade div after scrolling down 150 pixels
+// window.addEventListener('scroll', function() {
+//   const myDiv = document.getElementById('alert');
+//   if (window.scrollY > 150) {
+//     myDiv.style.display = 'none';
+//     myDiv.classList.add('hidden');
+//   } else {
+//     myDiv.classList.remove('hidden');
+//   }
+// });
 
 
 // Function to control an audio player
