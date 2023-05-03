@@ -4,14 +4,14 @@
     --player: #1f271b;
   }
   
-  * {
+* {
     margin: 0;
     padding: 0;
     outline: none;
     border: none;
-  }
+}
   
-  body {
+body {
     padding: 10px;
     font-family: sans-serif;
     display: flex;
@@ -19,24 +19,29 @@
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-  }
+}
   
-  .audio-player {
+.audio-player {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-  }
+}
   
-  button {
+button {
     padding: 10px 5px;
     width: 70px;
     cursor: pointer;
-    user-select: none;
-  }
+}
   
-  button:active {
+button:active {
     background: greenyellow;
-  }
+}
   
+.disable-select {
+    user-select: none; /* standard */
+    -moz-user-select: none; /* firefox specific */
+    -webkit-user-select: none; /* Chrome, Opera and Safari*/
+    -ms-user-select: none; /* IE, ms-edge */
+}

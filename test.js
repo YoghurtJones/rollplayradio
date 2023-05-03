@@ -1,3 +1,27 @@
+// Controls the global pause button.
+
+const globalTogglePlayback = document.querySelector(".audio-global-pause");
+globalTogglePlayback.addEventListener("click", pauseGlobal);
+
+function pauseGlobal() {
+  const audioplayers = document.querySelectorAll(".audio-track");
+  const playBtns = document.querySelectorAll(".audio-play");
+  
+  audioplayers.forEach((audio, index) => {
+    if (audio.currentTime > 0 && audio.paused) {
+      audio.play();
+      playBtns[index].textContent = 'Pause';
+      console.log('Audio now playing.');
+    } else {
+      audio.pause();
+      playBtns[index].textContent = 'Play';
+      console.log('Audio now paused.');
+    }
+  });
+}
+
+// Controls each audioplayer
+
 const audioplayers = document.querySelectorAll(".audio-player");
 
 audioplayers.forEach((audioplayer) => {
@@ -7,14 +31,13 @@ audioplayers.forEach((audioplayer) => {
   const muteBtn = audioplayer.querySelector(".audio-mute");
   const volumeUpBtn = audioplayer.querySelector(".vol-increase-10");
   const volumeDownBtn = audioplayer.querySelector(".vol-decrease-10");
-  
-  let intervalID;
-  let previousVolume = 0.5;
-  
+    
   playBtn.addEventListener("click", playAudio);
   stopBtn.addEventListener("click", stopAudio);
   muteBtn.addEventListener("click", toggleMute);
   
+  let intervalID;
+
   volumeDownBtn.addEventListener("mousedown", () => {
     intervalID = setInterval(() => {
       if (audio.volume > 0.1 && audio.volume <= 1) {
@@ -88,6 +111,8 @@ audioplayers.forEach((audioplayer) => {
     }
   }
   
+  let previousVolume = 0.5;
+
   function toggleMute() {
     if (audio.volume > 0) {
       previousVolume = audio.volume;
