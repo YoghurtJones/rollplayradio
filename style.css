@@ -341,6 +341,17 @@ nav {
     color: #1D9BF0;
 }
 
+.instagram {
+    color: #b44cf5;
+}
+
+.patreon,a{
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color: gold;
+}
+
 
 @media (width <= 450px){
 
