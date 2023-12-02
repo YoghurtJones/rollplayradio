@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./card.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c430204919.js" crossorigin="anonymous"></script>
+    <title>Sound Album</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-center">
+        <div class="nav-company-name">
+          <h1><a href="./index.html">RollPlayRad.io</a></h1>
+        </div>
+      </nav>
+      <div id="alert">
+        <p>This site is not compatible with Apple devices.</p>
+      </div>
+    </header>
+    <!--  -->
+    <div class="album bg-album">
+      <!-- Ambience Card -->
+      <div id="beach">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Beach</h1>
+          </div>
+          <div id="img-beach" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/beach.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="blizzard">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Blizzard</h1>
+          </div>
+          <div id="img-blizzard" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/blizzard.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="forest">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Forest</h1>
+          </div>
+          <div id="img-forest" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/forest.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="monster-lair">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Monster Lair</h1>
+          </div>
+          <div id="img-monster-lair" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/monster-lair.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="rain">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Rain</h1>
+          </div>
+          <div id="img-rain" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/rain.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="swamp">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Swamp</h1>
+          </div>
+          <div id="img-swamp" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/swamp.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="tavern">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Tavern</h1>
+          </div>
+          <div id="img-tavern" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/tavern.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="volcano">
+        <div class="card card-ambience-hover">
+          <div class="card-top card-ambience">
+            <h1>Volcano</h1>
+          </div>
+          <div id="img-volcano" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audio-volume">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/ambience/volcano.mp3" type="audio/mpeg" />
+              </audio>
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-ambience">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!-- Music Card -->
+      <div id="ambush">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Ambush</h1>
+          </div>
+          <div id="img-ambush" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/ambush.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="desert-excursion">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Desert Excursion</h1>
+          </div>
+          <div id="img-desert-excursion" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/desert-excursion.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="dwarven-city">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Dwarven City</h1>
+          </div>
+          <div id="img-dwarven-city" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/dwarven-city.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="epic-fight">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Epic Fight</h1>
+          </div>
+          <div id="img-epic-fight" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/epic-fight.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="ethereal-plane">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Ethereal Plane</h1>
+          </div>
+          <div id="img-ethereal-plane" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/ethereal-plane.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="green-plains">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Green Plains</h1>
+          </div>
+          <div id="img-green-plains" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/green-plains.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="humble-beginnings">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Humble Beginnings</h1>
+          </div>
+          <div id="img-humble-beginnings" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/humble-beginnings.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="large-city">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Large City</h1>
+          </div>
+          <div id="img-large-city" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/large-city.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="long-rest">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Long Rest</h1>
+          </div>
+          <div id="img-long-rest" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/long-rest.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="magic-item-shop">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Magic Item Shop</h1>
+          </div>
+          <div id="img-magic-item-shop" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/magic-item-shop.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="mt-celestia">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Mt Celestia</h1>
+          </div>
+          <div id="img-mt-celestia" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/mt-celestia.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="mystery">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Mystery</h1>
+          </div>
+          <div id="img-mystery" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/mystery.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="peaceful-village">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Peaceful Village</h1>
+          </div>
+          <div id="img-peaceful-village" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/peaceful-village.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="sea-adventure">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Sea Adventure</h1>
+          </div>
+          <div id="img-sea-adventure" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/sea-adventure.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="session-zero">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Session Zero</h1>
+          </div>
+          <div id="img-session-zero" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/session-zero.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="the-end">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>The End</h1>
+          </div>
+          <div id="img-the-end" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/the-end.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="wanted-outlaw">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Wanted Outlaw</h1>
+          </div>
+          <div id="img-wanted-outlaw" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/wanted-outlaw.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="intermission">
+        <div class="card card-music-hover">
+          <div class="card-top card-music">
+            <h1>Intermission</h1>
+          </div>
+          <div id="img-intermission" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track" loop>
+                <source src="./parts/audio/music/Intermission.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-music">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!-- Action Card -->
+      <div id="search">
+        <div class="card card-action-hover">
+          <div class="card-top card-action">
+            <h1>Search</h1>
+          </div>
+          <div id="img-search" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track">
+                <source src="./parts/audio/ambience/search.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-action">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+      <!-- Enemy Card -->
+      <div id="necromancer">
+        <div class="card card-enemy-hover">
+          <div class="card-top card-enemy">
+            <h1>Necromancer</h1>
+          </div>
+          <div id="img-necromancer" class="card-middle">
+            <div class="audio-play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="card-audio">
+            <div class="audioplayer">
+              <audio class="audio-track">
+                <source src="./parts/audio/enemy/necromancer.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-volume">
+              <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+              <progress min="0" max="1" value=".5"></progress>
+            </div>
+            <div class="audio-mute">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="audio-stop">
+              <i class="fa-solid fa-stop"></i>
+            </div>
+          </div>
+          <div class="card-bottom card-enemy">
+            <p>Description Required</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div id="contact">
+      <h1>How can you reach me?</h1>
+      <p>
+        Feel free to reach out to me on <br />
+        <a href="https://www.discord.com"><i class="discord fa-brands fa-discord"></i></a>
+        <a href="https://github.com"><i class="github fa-brands fa-github"></i></a>
+        <a href="https://www.reddit.com"><i class="reddit fa-brands fa-reddit"></i> </a>
+        <a href="https://twitter.com"><i class="twitter fa-brands fa-twitter"></i></a>
+      </p>
+    </div>
+    <!--  -->
+    <script src="./script-cards.js"></script>
+  </body>
+</html>

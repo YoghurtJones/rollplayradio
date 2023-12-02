@@ -4,471 +4,261 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dungeon Radio</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./card.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c430204919.js" crossorigin="anonymous"></script>
+    <title>rollplayrad.io</title>
   </head>
   <body>
     <header>
-      <nav class="primary-nav">
-        <div class="pri-nav-left">
-          <ul>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-fire fa-xl" style="color: #ff0800"></i></a>
-            </li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Browse</a></li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-ellipsis fa-xl"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="pri-nav-middle">
-          <input class="nav-search" type="text" placeholder="Search" />
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          <a href=""><i class="fa-solid fa-volume-xmark"></i></a>
-          <a href=""><i class="fa-solid fa-circle-half-stroke"></i></a>
-        </div>
-        <div class="pri-nav-right">
-          <ul>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-crown fa-bounce" style="color: #ffbf00"></i></a>
-            </li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Login</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-user"></i></a>
-            </li>
-          </ul>
+      <nav>
+        <div class="nav-company-name">
+          <h1><a href="./index.html">RollPlayRad.io</a></h1>
         </div>
       </nav>
-      <div class="card-new">
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><i class="fa-solid fa-music fa-beat" style="color: #333138"></i>Ethereal Plains is available now!<i
-            class="fa-solid fa-music fa-beat"
-            style="color: #333138"
-          ></i
-        ></a>
+      <div id="alert">
+        <p>This site is not compatible with Apple devices.</p>
       </div>
     </header>
-    <main>
-      <div class="hero">
-        <div class="album">
-          <div class="page">
-            <!-- Cards Begin Here -->
-            <div class="card">
-              <div id="ambush" class="contents">
-                <div class="audio-player">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/ambush.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-ambush" class="card-image">
-                  <p class="card-name bg-music-name">Ambush</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">From the shadows, attackers launch a surprise strike.</p>
+    <div id="demo">
+      <div>
+        <h1 class="demo-title">Build your adventure atmosphere!</h1>
+      </div>
+      <!-- Card Album Start -->
+      <div class="album">
+        <!-- Ambience Card -->
+        <div id="forest">
+          <div class="card card-ambience-hover">
+            <div class="card-top card-ambience">
+              <h1>Forest</h1>
+            </div>
+            <div id="img-forest" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
               </div>
             </div>
-            <div class="card">
-              <div id="beach" class="contents">
-                <div class="audio-player">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/beach.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-beach" class="card-image">
-                  <p class="card-name bg-ambience-name">Beach</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">Powerful waves crashing against the sandy shore.</p>
+            <div class="card-audio">
+              <div class="audio-volume">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/ambience/forest.mp3" type="audio/mpeg" />
+                </audio>
+                <input type="range" name="volume-slider" min="0" max="1" step=".01" value=".5" aria-label="volume-slider" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
               </div>
             </div>
-            <!-- New Card -->
-            <div class="card">
-              <div id="blizzard" class="contents">
-                <div class="audio-player">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/blizzard.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-blizzard" class="card-image">
-                  <p class="card-name bg-ambience-name">Blizzard</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">Icy winds howling, snowflakes swirling in a whiteout blizzard storm.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="desert-excursion" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/desert-excursion.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-desert-excursion" class="card-image">
-                  <p class="card-name bg-music-name">Desert Excursion</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">A grueling journey through the scorching sands of the wasteland.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="dwarven-city" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/dwarven-city.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-dwarven-city" class="card-image">
-                  <p class="card-name bg-music-name">Dwarven City</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Subterranean streets echo with the clang of hammer on anvil.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="epic-fight" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/epic-fight.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-epic-fight" class="card-image">
-                  <p class="card-name bg-music-name">Epic Fight</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Swords clashed as heroes battled under the drunken tavern's glow.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="ethereal-plane" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/ethereal-plane.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-ethereal-plane" class="card-image">
-                  <p class="card-name bg-music-name">Ethereal Plane</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">A shimmering realm beyond reality, where spirits and dreams converge.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="forest" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/forest.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-forest" class="card-image">
-                  <p class="card-name bg-ambience-name">Forest</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">A verdant realm of towering trees and mystical creatures awaits.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="green-plains" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/green-plains.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-green-plains" class="card-image">
-                  <p class="card-name bg-music-name">Green Plains</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Endless green plains, a peaceful rural vista.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="large-city" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/large-city.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-large-city" class="card-image">
-                  <p class="card-name bg-music-name">Large City</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Towering structures engulfed the skyline as the bustling metropolis alive below.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="long-rest" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/long-rest.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-long-rest" class="card-image">
-                  <p class="card-name bg-music-name">Long Rest</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Tents pitched, fire crackling, dreams of glory fuel their rest.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="magic-item-shop" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/magic-item-shop.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-magic-item-shop" class="card-image">
-                  <p class="card-name bg-music-name">Magic Item Shop</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Magical curiosities and enchantments await in the mystical emporium.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="monster-lair" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/monster-lair.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-monster-lair" class="card-image">
-                  <p class="card-name bg-music-name">Monster Lair</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">A dark, foreboding den filled with fearsome beasts and treacherous traps!</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="mt-celestia" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/mt-celestia.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-mt-celestia" class="card-image">
-                  <p class="card-name bg-music-name">Mt Celestia</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">A Shining mountain peak with gates to purity and divine radiance.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="mystery" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/mystery.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-mystery" class="card-image">
-                  <p class="card-name bg-music-name">Mystery</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Pieces fall into place as the truth of the mystery emerges.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="peaceful-village" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/peaceful-village.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-peaceful-village" class="card-image">
-                  <p class="card-name bg-music-name">Peaceful Village</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Charming cottages line the cobblestone streets filled with kind folk.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="rain" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/rain.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-rain" class="card-image">
-                  <p class="card-name bg-ambience-name">Rain</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">Rain, rain go away, come again another day.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="sea-adventure" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/music/sea-adventure.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-sea-adventure" class="card-image">
-                  <p class="card-name bg-music-name">Sea Adventure</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-music-desc">Epic adventure filled with sea beasts and treasure.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="swamp" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/swamp1.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-swamp" class="card-image">
-                  <p class="card-name bg-ambience-name">Swamp</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">A murky mire where treacherous creatures lurk in stagnant waters.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="tavern" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/tavern.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-tavern" class="card-image">
-                  <p class="card-name bg-ambience-name">Tavern</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">Welcome! Mead, Food and bar fights for all!</p>
-              </div>
-            </div>
-            <div class="card">
-              <div id="volcano" class="contents">
-                <div class="audioplayer">
-                  <audio class="audio-track" loop>
-                    <source src="/parts/audio/ambience/volcano.mp3" type="audio/mpeg" />
-                  </audio>
-                </div>
-                <div id="img-volcano" class="card-image">
-                  <p class="card-name bg-ambience-name">Volcano</p>
-                  <div class="audio-options">
-                    <i class="audio-play fa-solid fa-play" style="color: white"></i>
-                    <input class="volume-slider" type="range" min="0" max="1" step="0.01" value="1" />
-                    <i class="audio-mute fa-solid fa-volume-high" style="color: white"></i>
-                    <i class="audio-stop fa-solid fa-stop" style="color: white"></i>
-                  </div>
-                </div>
-                <p class="card-desc bg-ambience-desc">Volcano erupts, unleashing molten fury!</p>
-              </div>
+            <div class="card-bottom card-ambience">
+              <p>A verdant realm of towering trees and mystical creatures awaits.</p>
             </div>
           </div>
         </div>
+        <!-- Music Card -->
+        <div id="magic-item-shop">
+          <div class="card card-music-hover">
+            <div class="card-top card-music">
+              <h1>Magic Item Shop</h1>
+            </div>
+            <div id="img-magic-item-shop" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/music/magic-item-shop.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+                <progress min="0" max="1" value="0.5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-music">
+              <p>Magical curiosities and enchantments await in the mystical emporium.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Action Card -->
+        <div id="search">
+          <div class="card card-action-hover">
+            <div class="card-top card-action">
+              <h1>Search</h1>
+            </div>
+            <div id="img-search" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track" loop>
+                  <source src="./parts/audio/ambience/search.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-action">
+              <p>Search the area for what the eyes can't see.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Enemy Card -->
+        <div id="necromancer">
+          <div class="card card-enemy-hover">
+            <div class="card-top card-enemy">
+              <h1>Necromancer</h1>
+            </div>
+            <div id="img-necromancer" class="card-middle">
+              <div class="audio-play">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card-audio">
+              <div class="audioplayer">
+                <audio class="audio-track">
+                  <source src="./parts/audio/enemy/necromancer.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="audio-volume">
+                <input type="range" name="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="volume-slider" />
+                <progress min="0" max="1" value=".5"></progress>
+              </div>
+              <div class="audio-mute">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="audio-stop">
+                <i class="fa-solid fa-stop"></i>
+              </div>
+            </div>
+            <div class="card-bottom card-enemy">
+              <p>A powerful spellcaster that controls the dead.</p>
+            </div>
+          </div>
+        </div>
+        <div id="info">
+          <h1>What is <span class="brand-color">RollPlayRad.io</span>?</h1>
+          <p>
+            You've just created your first table-top adventure, the story is ready and so are the players, but what about the atmosphere? That's where
+            we come in!
+          </p>
+          <p>
+            With an offering of <span class="cat-ambience">ambience</span>, <span class="cat-music">music</span>,
+            <span class="cat-action">action</span> and <span class="cat-enemy">enemy</span> sound cards, for you to build the perfect soundscape for
+            your session!
+          </p>
+        </div>
       </div>
-      <!-- <div class="sidekick"></div>
-      <div class="damsel"></div> -->
-    </main>
-    <footer>
-      <!-- <div class="crowd"></div> -->
-    </footer>
-    <script src="audioplayer.js"></script>
+    </div>
+    <div id="packs">
+      <h1>Currently available audio catalogue</h1>
+      <div class="pack-type">
+        <div class="pack-ambience">
+          <h2>Ambience</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Beach</li>
+              <li>Blizzard</li>
+              <li>Forest</li>
+              <li>Monster Lair</li>
+              <li>Rain</li>
+              <li>Swamp</li>
+              <li>Tavern</li>
+              <li>Volcano</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack-music">
+          <h2>Music</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Ambush</li>
+              <li>Desert Excursion</li>
+              <li>Dwarven City</li>
+              <li>Epic Fight</li>
+              <li>Ethereal Plane</li>
+              <li>Green Plains</li>
+              <li>Large City</li>
+              <li>Long Rest</li>
+              <li>Magic Item Shop</li>
+              <li>Wanted Outlaw</li>
+            </ul>
+            <p>and many more!</p>
+          </div>
+        </div>
+        <div class="pack-action">
+          <h2>Action</h2>
+          <div class="pack-list">
+            <ul>
+              <li>Attack</li>
+              <li>Cast Spell</li>
+              <li>Crowd Cheer</li>
+              <li>Search</li>
+              <li>Teleport</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack-enemy hover-container">
+          <h2>Enemy</h2>
+          <div class="pack-list">
+            <ul>
+              <!-- <li>Demon</li>
+              <li>Dragon</li>
+              <li>Goblin</li> -->
+              <li>Necromancer</li>
+              <!-- <li>Orc</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1>Click <a href="/cards.html">here</a> to access the cards.</h1>
+    </div>
+    <div id="about">
+      <h1>Who is <span class="brand-color">RollPlayRad.io?</span></h1>
+      <p>At this point it is just a hobby project developed by one learning front-end developer, me! YoghurtJones!</p>
+      <p>Slowly teaching myself the front-end fundamentals of HTML, CSS and Javascript, back-end comes later.</p>
+      <p>
+        After hearing about friends who play and lead table-top fantasy games such as Dungeons and Dragons, always discovering the same
+        over-complicated challenge of audio from existing offerings on the internet.
+      </p>
+      <p>The objective is to provide a simple UI to deliver audio tracks that can be independently be controlled across standard audio options.</p>
+    </div>
+    <div id="contact">
+      <h1>Toss a coin to the developer?</h1>
+      <p>
+        If you would like to support me on this adventure, you can join the
+        <a href="https://www.patreon.com/RollPlayRadio">Patreon<i class="patreon"></i></a>.
+      </p>
+      <p>
+        Feel free to reach out to me on <br /><br />
+        <a href="https://discord.gg/JfdfRPqN"><i class="discord fa-brands fa-discord"></i></a>
+        <a href="https://github.com/yoghurtjones"><i class="github fa-brands fa-github"></i></a>
+        <a href="https://www.reddit.com/r/rollplayradio/"><i class="reddit fa-brands fa-reddit"></i> </a>
+        <a href="https://twitter.com/rollplayradio"><i class="twitter fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com/rollplayradio"><i class="instagram fa-brands fa-instagram"></i></a>
+      </p>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

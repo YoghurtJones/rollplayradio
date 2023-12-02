@@ -1,0 +1,48 @@
+:root {
+    --card: #f3fcf0;
+    --image: #ee4266;
+    --player: #1f271b;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    touch-action: manipulation;
+}
+  
+body {
+    padding: 10px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+  
+.audio-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+  
+button {
+    padding: 10px 5px;
+    width: 70px;
+    cursor: pointer;
+}
+  
+button:active {
+    background: greenyellow;
+}
+  
+.disable-select {
+    user-select: none; /* standard */
+    -moz-user-select: none; /* firefox specific */
+    -webkit-user-select: none; /* Chrome, Opera and Safari*/
+    -ms-user-select: none; /* IE, ms-edge */
+}

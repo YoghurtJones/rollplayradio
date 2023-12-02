@@ -1,704 +1,515 @@
+:root {
+    --slategray: #253a5e;
+    --lightgray: #818AA3;
+    --darkgray: #313543;
+    --darkergray: #1f222f;
+    --abyss: #101116;
+    --teagreen: #75a743;
+    --teagreendark: #436a1d;
+    --lemonchiffon: #de9e41;
+    --lemonchiffondark: #b17b2a;
+    --paledogwood: #d6dbe5;
+    --darknessred: #a53030;
+    --darknessredder: #841515;
+  }
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+  
 body {
-  /* Apply a background color to this element. */
-  background-color: #333138;
-  caret-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-family: "Josefin Sans", sans-serif;
+    background: var(--darkgray);
 }
 
 header {
-  z-index: 1000;
-  position: sticky;
-  top: 0;
-}
-
-.primary-nav {
-  /* Apply a background color to the element. */
-  background-color: #333138;
-  /* Apply minimum height of the element. */
-  min-height: 50px;
-  /* Control the layout of child elements. */
-  display: flex;
-  /* Position items vertically center of the parent element. */
-  flex-direction: row;
-  /* Position the child elements to the end (right) of the element. */
-  justify-content: center;
-  align-items: center;
-}
-
-.primary-nav ul {
-  margin: 5px;
-  /* Control the layout of contained elements */
-  display: flex;
-  /* Force flex to row instead of column. */
-  flex-direction: row;
-}
-
-.primary-nav li {
-  /* Add margin to the list items contained within the parent element. */
-  margin: 5px 5px;
-  /* Remove bullet points on list. */
-  list-style: none;
-}
-
-.primary-nav a {
-  /* Apply a padding to the text. */
-  padding: 5px 10px;
-  /* Remove underline on text. */
-  text-decoration: none;
-  /* Assign color of text. */
-  color: #009e60;
-  /* Apply a background color. */
-  background-color: #333138;
-  /* Apply a border radius to the text. */
-  border-radius: 5px;
-
-  font-weight: 700;
-}
-
-.primary-nav a:hover {
-  color: #87ffcb;
-
-  background-color: #262525;
-}
-
-.pri-nav-left {
-  /* Control the layout of child elements. */
-  flex: 1;
-  display: flex;
-  /* Position items vertically center of the parent element. */
-  align-items: center;
-  justify-content: left;
-  font-size: 16px;
-}
-
-.pri-nav-middle {
-  /* Control the layout of child elements. */
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  /* Position items vertically center of the parent element. */
-  align-items: center;
-  gap: 5px;
-}
-
-.pri-nav-middle input {
-  padding: 5px;
-  border-style: solid;
-  background-color: #efeff1;
-  border-color: white;
-  border-radius: 5px;
-  font-size: 16px;
-  line-height: normal;
-}
-
-.pri-nav-middle input::placeholder {
-  color: #9a9a9a;
-}
-
-.pri-nav-middle input:focus {
-  background-color: white;
-  outline: none;
-}
-
-.pri-nav-middle button {
-  padding: 5px;
-  border-style: solid;
-  background-color: #efeff1;
-  border-color: white;
-  border-radius: 5px;
-  height: 33px; /* set a fixed height */
-  width: 33px;
-}
-
-.pri-nav-right {
-  margin-right: 10px;
-  /* Control the layout of child elements. */
-  flex: 1;
-  display: flex;
-  justify-content: right;
-  /* Position items vertically center of the parent element. */
-  align-items: center;
-}
-
-.card-new {
-  /* Control the layout of child elements. */
-  display: flex;
-  /* Position content each element to the horizontal center of parent element.*/
-  justify-content: center;
-  /* Position items vertically center of the parent element. */
-  align-items: center;
-  /* Apply a background color to this element. */
-  background-color: #ffcc00;
-
-  box-shadow: 1px 1px 10px #43454379;
-}
-
-.card-new i {
-  margin: 0 10px;
-  padding: 0;
-  font-weight: 700;
-}
-
-.card-new a {
-  /* Apply a padding to the text. */
-  padding: 5px 5px;
-  /* Remove underline on text. */
-  text-decoration: none;
-  /* Apply a border radius to the text. */
-  border-radius: 5px;
-  font-weight: 700;
-  color: black;
-}
-
-.card-new:hover {
-  background-color: #ffdc51;
-}
-
-.hero {
-  /* height: 750px; */
-  background: linear-gradient(to bottom, rgb(197, 15, 8), rgba(74, 0, 0, 0.9));
-  box-shadow: 1px 1px 10px #43454379;
-}
-
-.sidekick {
-  height: 750px;
-  background-color: #7cf0bd;
-
-  box-shadow: 1px 1px 10px #43454379;
-}
-
-.damsel {
-  height: 750px;
-  background-color: #eb5e28;
-
-  box-shadow: 1px 1px 10px #43454379;
-}
-
-.crowd {
-  height: 150px;
-  background-color: #333138;
-  box-shadow: 1px 1px 10px #43454379;
-}
-
-.album {
-  padding: 20px;
-  /* background-color: silver; */
-}
-
-.page {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  width: 250px;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translatey(-4px);
-}
-
-.contents {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-name {
-  user-select: none;
-  margin-bottom: 210px;
-  width: 100%;
-  padding: 10px 0;
-  border-radius: 10px 10px 0 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 20px;
-  color: whitesmoke;
-}
-
-.card-desc {
-  user-select: none;
-  padding: 5px 10px;
-  height: 60px;
-  color: whitesmoke;
-  border-radius: 0 0 10px 10px;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 10px 20px #000000cc;
-}
-
-.card-desc p {
-  font-size: 16px;
-  text-align: center;
-}
-
-.bg-music-name {
-  background: linear-gradient(to right, #5475a0e1, #2E4057e1);
-}
-
-.bg-music-desc {
-  background: linear-gradient(to right, #5475a0, #2E4057);
-}
-
-.bg-ambience-name {
-  background: linear-gradient(to right, #009e60e1, #0f5c0fe1);
-}
-
-.bg-ambience-desc {
-  background: linear-gradient(to right, #009e60, #105d10);
-}
-
-.audio-options {
-  margin-top: 214px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.audio-options:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.audio-play {
-  flex: 1;
-  padding: 10px;
-  opacity: 0.5;
-}
-
-.audio-play:hover {
-  opacity: 1;
-}
-
-.volume-slider {
-  width: 100px;
-  height: 8px;
-  margin: 0 10px;
-  opacity: 0.2;
-  cursor: pointer;
-
-  appearance: none;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.volume-slider:hover {
-  opacity: 0.8;
-}
-
-.audio-mute {
-  flex: 1;
-  padding: 10px;
-  opacity: 0.5;
-}
-
-.audio-mute:hover {
-  opacity: 1;
-}
-
-.audio-stop {
-  flex: 1;
-  padding: 10px;
-  opacity: 0.5;
-}
-
-.audio-stop:hover {
-  opacity: 1;
-}
-
-#img-ambush {
-  background-image: url(/parts/image/ambush.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
-
-#img-ambush p:first-child {
-  position: absolute;
-  bottom: 0;
-}
-
-#img-ambush:hover {
-  background-size: 210%;
-}
-
-#img-beach {
-  background-image: url(/parts/image/beach.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
-
-#img-beach p:first-child {
-  position: absolute;
-  bottom: 0;
-}
-
-#img-beach:hover {
-  background-size: 210%;
-}
-
-#img-desert-excursion {
-  background-image: url(/parts/image/desert-excursion.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
-
-#img-desert-excursion p:first-child {
-  position: absolute;
-  bottom: 0;
-}
-
-#img-desert-excursion:hover {
-  background-size: 210%;
-}
-
-#img-green-plains {
-  background-image: url(/parts/image/green-plains.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
-
-#img-green-plains p:first-child {
-  position: absolute;
-  bottom: 0;
-}
-
-#img-green-plains:hover {
-  background-size: 210%;
-}
-
-#img-volcano {
-  background-image: url(/parts/image/volcano.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+    padding: 10px 0 0 0;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    background: var(--darkgray);
 }
 
-#img-volcano p:first-child {
-  position: absolute;
-  bottom: 0;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#img-volcano:hover {
-  background-size: 210%;
+.nav-company-name {
+    display: flex;
+    margin: 10px;
+    align-items: center;
 }
 
-#img-large-city {
-  background-image: url(/parts/image/large-city.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.nav-company-name h1 {
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 22px;
+    color: #ffd700;
 }
 
-#img-large-city p:first-child {
-  position: absolute;
-  bottom: 0;
+.nav-company-name a {
+    list-style: none;
+    text-decoration: none;
+    color: gold;
 }
 
-#img-large-city:hover {
-  background-size: 210%;
+.nav-menu {
+    margin: 10px 20px 10px 10px;
+    display: flex;
 }
 
-#img-sea-adventure {
-  background-image: url(/parts/image/sea-adventure.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#img-sea-adventure p:first-child {
-  position: absolute;
-  bottom: 0;
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
-#img-sea-adventure:hover {
-  background-size: 210%;
+.nav-menu li {
+    list-style: none;
 }
 
-#img-magic-item-shop {
-  background-image: url(/parts/image/magic-item-shop.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.nav-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--paledogwood);
 }
 
-#img-magic-item-shop p:first-child {
-  position: absolute;
-  bottom: 0;
+.nav-menu a:hover {
+    color: gold;
 }
 
-#img-magic-item-shop:hover {
-  background-size: 210%;
-}
+#alert {
+    width: 100%;
+    height: 30px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-#img-blizzard {
-  background-image: url(/parts/image/blizzard.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
+    z-index: 1000;
+    position: sticky;
+    top: 0;
 
-#img-blizzard p:first-child {
-  position: absolute;
-  bottom: 0;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
 }
 
-#img-blizzard:hover {
-  background-size: 210%;
+#alert.hidden {
+    opacity: 0;
 }
 
-#img-dwarven-city {
-  background-image: url(/parts/image/dwarven-city.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+#alert p {
+    padding: 10px 0;
 }
 
-#img-dwarven-city p:first-child {
-  position: absolute;
-  bottom: 0;
+#demo {
+    background: var(--abyss);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-#img-dwarven-city:hover {
-  background-size: 210%;
-}
+.demo-title {
+    padding: 40px 0;
+    text-align: center;
 
-#img-epic-fight {
-  background-image: url(/parts/image/epic-fight.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
+    color: white;
+    font-size: 40px;
+    -webkit-user-select: none;
+    user-select: none;
 
-#img-epic-fight p:first-child {
-  position: absolute;
-  bottom: 0;
+    opacity: 0;
+    animation: reveal 1s ease .5s forwards;
 }
 
-#img-epic-fight:hover {
-  background-size: 210%;
+#info {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    animation: reveal 1s ease 1.5s forwards;
 }
 
-#img-ethereal-plane {
-  background-image: url(/parts/image/ethereal-plane.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+@keyframes reveal {
+    0% {
+      opacity: 0;
+      /* transform: scale(.8); */
+    }
+    100% {
+      opacity: 1;
+      /* transform: scale(1); */
+    }
 }
 
-#img-ethereal-plane p:first-child {
-  position: absolute;
-  bottom: 0;
+#info h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
 }
 
-#img-ethereal-plane:hover {
-  background-size: 210%;
+#info p {
+    max-width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
 }
 
-#img-forest {
-  background-image: url(/parts/image/forest.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.brand-color {
+    color: gold;
 }
 
-#img-forest p:first-child {
-  position: absolute;
-  bottom: 0;
+.cat-ambience {
+    color: var(--teagreen);
 }
 
-#img-forest:hover {
-  background-size: 210%;
+.cat-music {
+    color: var(--slategray);
 }
 
-#img-long-rest {
-  background-image: url(/parts/image/long-rest.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.cat-action {
+    color: var(--lemonchiffon);
 }
 
-#img-long-rest p:first-child {
-  position: absolute;
-  bottom: 0;
+.cat-enemy {
+    color: var(--darknessred);
 }
 
-#img-long-rest:hover {
-  background-size: 210%;
+#packs {
+    padding: 20px 0 10px 0;
+    background: var(--darkergray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#img-monster-lair {
-  background-image: url(/parts/image/monster-lair.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+#packs h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
 }
 
-#img-monster-lair p:first-child {
-  position: absolute;
-  bottom: 0;
+#packs h2 {
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--paledogwood);
 }
 
-#img-monster-lair:hover {
-  background-size: 210%;
+#packs ul {
+    padding-top: 5px;
+    color: white;
+    text-align: left;
 }
 
-#img-mt-celestia {
-  background-image: url(/parts/image/mt-celestia.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+#packs li {
+    padding: 3px 0;
+    width: 150px;
+    font-size: 18px;
+    list-style: none;
+    text-align: center;
 }
 
-#img-mt-celestia p:first-child {
-  position: absolute;
-  bottom: 0;
+#packs a {
+    list-style: none;
+    text-decoration: none;
+    color: gold;
 }
 
-#img-mt-celestia:hover {
-  background-size: 210%;
+#packs p {
+    padding: 5px;
+    font-size: 18px;
+    color: white;
 }
 
-#img-mystery {
-  background-image: url(/parts/image/mystery.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.pack-type {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
-#img-mystery p:first-child {
-  position: absolute;
-  bottom: 0;
+.pack-ambience,
+.pack-music,
+.pack-action,
+.pack-enemy {
+    flex: 1;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
 }
 
-#img-mystery:hover {
-  background-size: 210%;
+.pack-ambience {
+    background: linear-gradient(to right bottom, var(--teagreen), var(--teagreendark));
 }
-
-#img-tavern {
-  background-image: url(/parts/image/tavern.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+.pack-music {
+    background: linear-gradient(to right bottom, var(--slategray), var(--darkgray));
 }
-
-#img-tavern p:first-child {
-  position: absolute;
-  bottom: 0;
+.pack-action {
+    background: linear-gradient(to right bottom, var(--lemonchiffon), var(--lemonchiffondark));
 }
-
-#img-tavern:hover {
-  background-size: 210%;
+.pack-enemy {
+    background: linear-gradient(to right bottom, var(--darknessred), var(--darknessredder));
 }
 
-#img-peaceful-village {
-  background-image: url(/parts/image/peaceful-village.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
-}
 
-#img-peaceful-village p:first-child {
-  position: absolute;
-  bottom: 0;
+#about {
+    background: var(--abyss);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-#img-peaceful-village:hover {
-  background-size: 210%;
+#about h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
 }
 
-#img-rain {
-  background-image: url(/parts/image/rain.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+#about p {
+    max-width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
 }
 
-#img-rain p:first-child {
-  position: absolute;
-  bottom: 0;
+#contact {
+    background: var(--darkergray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-#img-rain:hover {
-  background-size: 210%;
+#contact h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
 }
 
-#img-swamp {
-  background-image: url(/parts/image/swamp.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  transition: background-size 1s ease;
-  position: relative;
+#contact p {
+    max-width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
 }
 
-#img-swamp p:first-child {
-  position: absolute;
-  bottom: 0;
+#contact a {
+    list-style: none;
+    text-decoration: none;
 }
 
-#img-swamp:hover {
-  background-size: 210%;
+.discord {
+    color: #5865F2;
+}
+
+.github {
+    color: white;
+    cursor: pointer;
+}
+
+.reddit {
+    color: #FF4500;
+}
+
+.twitter {
+    color: #1D9BF0;
+}
+
+.instagram {
+    color: #b44cf5;
+}
+
+.patreon,a{
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    color: gold;
+}
+
+
+@media (width <= 450px){
+
+    #alert {
+        width: 100%;
+        height: 30px;
+        background: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        z-index: 1000;
+        position: sticky;
+        top: 0;
+    
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
+    
+    #alert.hidden {
+        opacity: 0;
+    }
+    
+    #alert p {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    #demo {
+        background: var(--abyss);
+        display: flex;
+        flex-direction: column;
+        padding: 0 2px 0 2px;
+    }
+    
+    .demo-title {
+        padding: 40px 0 20px 0;
+        text-align: center;
+    
+        color: white;
+        font-size: 40px;
+        -webkit-user-select: none;
+        user-select: none;
+    
+        opacity: 0;
+        animation: reveal 1s ease .5s forwards;
+    }
+    
+    #info {
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        opacity: 0;
+        -webkit-user-select: none;
+        user-select: none;
+        animation: reveal 1s ease 1.5s forwards;
+    }
+    
+    @keyframes reveal {
+        0% {
+          opacity: 0;
+          /* transform: scale(.8); */
+        }
+        100% {
+          opacity: 1;
+          /* transform: scale(1); */
+        }
+    }
+    
+    #info h1 {
+        padding: 10px;
+        font-size: 30px;
+        color: white;
+    }
+    
+    #info p {
+        max-width: 700px;
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .brand-color {
+        color: gold;
+    }
+    
+    .cat-ambience {
+        color: var(--teagreen);
+    }
+    
+    .cat-music {
+        color: var(--slategray);
+    }
+    
+    .cat-action {
+        color: var(--lemonchiffon);
+    }
+    
+    .cat-enemy {
+        color: var(--darknessred);
+    }
+
+    #packs {
+        padding: 20px 0 10px 0;
+        background: var(--darkergray);
+        display: flex;
+        flex-direction: center;
+    }
+    
+    #packs h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    #packs h2 {
+        color: white;
+        padding-bottom: 5px;
+        border-bottom: 2px solid var(--paledogwood);
+    }
+    
+    #packs ul {
+        padding-top: 5px;
+        color: white;
+        text-align: left;
+    }
+    
+    #packs li {
+        padding: 3px 0;
+        width: 150px;
+        font-size: 18px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    #packs a {
+        list-style: none;
+        text-decoration: none;
+        color: gold;
+    }
+    
+    #packs p {
+        padding: 5px;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .pack-type {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
