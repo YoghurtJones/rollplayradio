@@ -360,6 +360,19 @@
   background-size: 160%;
 }
 
+/* Card - Music - Crusaders */
+#img-crusaders {
+  background-image: url(./parts/image/crusaders.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140%;
+  transition: background-size 1s ease;
+  position: relative;
+}
+#img-ambush:hover {
+  background-size: 160%;
+}
+
 /* Card - Music - Desert Excursion */
 #img-desert-excursion {
   background-image: url(./parts/image/desert-excursion.png);

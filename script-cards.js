@@ -104,6 +104,7 @@ controlAudioPlayer('volcano');
 
 // MUSIC
 controlAudioPlayer('ambush');
+controlAudioPlayer('crusaders');
 controlAudioPlayer('desert-excursion');
 controlAudioPlayer('dwarven-city');
 controlAudioPlayer('epic-fight');
