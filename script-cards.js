@@ -104,7 +104,6 @@ controlAudioPlayer('volcano');
 
 // MUSIC
 controlAudioPlayer('ambush');
-controlAudioPlayer('crusaders');
 controlAudioPlayer('desert-excursion');
 controlAudioPlayer('dwarven-city');
 controlAudioPlayer('epic-fight');
@@ -120,6 +119,7 @@ controlAudioPlayer('peaceful-village');
 controlAudioPlayer('sea-adventure');
 controlAudioPlayer('session-zero');
 controlAudioPlayer('the-end');
+controlAudioPlayer('wanted-outlaw');
 controlAudioPlayer('intermission');
 
 // ACTION
