@@ -42,7 +42,7 @@
   animation: reveal 1s ease 1s forwards;
 
   -webkit-user-select: none;
-    user-select: none;
+  user-select: none;
 }
 
 @keyframes reveal {
@@ -388,7 +388,7 @@
 
 /* Card - Music - Epic Fight */
 #img-epic-fight {
-  background-image: url(./parts/image/epic-fight.jpg);
+  background-image: url(./parts/image/epic-fight.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 140%;
@@ -581,7 +581,6 @@
   background-size: 120%;
 }
 
-
 /* Card - Action - Search */
 #img-search {
   background-image: url(./parts/image/mystery.png);
@@ -608,22 +607,19 @@
   background-size: 160%;
 }
 
-
 /*  */
 
-
-@media (width <= 450px){
-
+@media (width <= 450px) {
   .album {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /* background: var(--darkergray); */
-  } 
+  }
 
   .bg-album {
     background: var(--abyss);
-  }  
+  }
   .card {
     margin: 5px 7px 5px 7px;
     width: 190px;
@@ -638,11 +634,11 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: box-shadow 0.2s ease-in-out;
     animation: reveal 1s ease 1s forwards;
-  
+
     -webkit-user-select: none;
-      user-select: none;
+    user-select: none;
   }
-  
+
   @keyframes reveal {
     0% {
       opacity: 0;
@@ -655,7 +651,7 @@
   .card-active {
     box-shadow: 0px 0px 25px gold;
   }
-  
+
   .card-top {
     width: 100%;
     height: 30px;
@@ -682,7 +678,7 @@
     align-items: center;
     cursor: pointer;
   }
-  
+
   .audio-play i {
     padding: 40px;
     color: white;
@@ -696,7 +692,7 @@
     flex-direction: row;
     cursor: pointer;
   }
-  
+
   .card-bottom {
     width: 100%;
     height: 60px;
@@ -711,7 +707,7 @@
     font-size: 15px;
     color: white;
   }
-  
+
   /* Card audioplayer style*/
   .audio-volume,
   .audio-mute,
@@ -746,7 +742,7 @@
     color: white;
     transform: scale(1.3);
   }
-  
+
   /* Card audioplayer volume slider style*/
   .audio-volume input {
     width: 110px;
@@ -778,39 +774,39 @@
   .audio-volume progress::-webkit-progress-value {
     background: var(--paledogwood);
   }
-  
+
   /* Card category colors */
   .card-ambience {
     background-image: linear-gradient(to right bottom, var(--teagreen), var(--teagreendark));
   }
-  
+
   .card-ambience:hover {
     box-shadow: 0px 0px 25px var(--teagreen);
   }
-  
+
   .card-music {
     /* background: var(--darkgray); */
     background-image: linear-gradient(to right bottom, var(--slategray), var(--darkgray));
   }
-  
+
   .card-music:hover {
     box-shadow: 0px 0px 25px var(--slategray);
   }
-  
+
   .card-action {
     /* background: var(--lemonchiffon); */
     background-image: linear-gradient(to right bottom, var(--lemonchiffon), var(--lemonchiffondark));
   }
-  
+
   .card-action:hover {
     box-shadow: 0px 0px 25px var(--lemonchiffon);
   }
-  
+
   .card-enemy {
     /* background: var(--darkness); */
     background-image: linear-gradient(to right bottom, var(--darknessred), var(--darknessredder));
   }
-  
+
   .card-enemy-hover:hover {
     box-shadow: 0px 0px 25px var(--darknessred);
   }
