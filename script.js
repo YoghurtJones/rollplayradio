@@ -49,24 +49,7 @@ function controlAudioPlayer(audioPlayerID) {
       cardActive.classList.remove('card-active');
       console.log("Card audio paused.");
     }
-  });
-
-  // volumeDown.addEventListener('click', function() {
-  //   if(audioTrack.volume >= 0.1 && audioTrack.volume <= 1) {
-  //     audioTrack.volume -= 0.1;
-  //   }else {
-  //     console.log('Volume is 0.');
-  //   }
-  // })
-
-  // volumeUp.addEventListener('click', function() {
-  //   if(audioTrack.volume >= 0 && audioTrack.volume < 1) { // use the correct condition
-  //     audioTrack.volume += 0.1; // use "+=" to decrease the volume
-  //   } else {
-  //     console.log('Volume is already at maximum.'); // update the console message
-  //   }
-  // });
-  
+  });  
 
   volumeSlider.addEventListener('input', function() {
     audioTrack.volume = volumeSlider.value;
